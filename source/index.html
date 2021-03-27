@@ -1,12 +1,194 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/" width="" height="" alt="Логотип приложения Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="concourse.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="availability">
+      <h1 class="visually-hidden">Приожение Pink раскрасит вашу реальность</h1>
+      <div class="availability__wrapper">
+        <p class="slogan slogan-availability">Взгляните<br> на жизнь<br> иначе!</p>
+        <a class="link-download" href="#" download="">Скачать приложение</a>
+        <ul class="available-imade__list">
+          <li class="available-imade__item">IOS</li>
+          <li class="available-imade__item">Android</li>
+          <li class="available-imade__item">Windows Phone</li>
+        </ul>
+        <p class="available-text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <section class="capability">
+      <h2 class="visually-hidden">Возможности приложения Pink</h2>
+      <div class="capability__wrapper">
+        <p class="slogan slogan-capability">Устали от серости мегаполиса?<br> Нам есть, что вам<br> предложить!</p>
+        <ul class="capability__list">
+          <li class="capability__item capability__item--mood">
+            <h3 class="capability__item-topic">Поднимает<br> настроение</h3>
+            <p class="capability__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="capability__item capability__item--change">
+            <h3 class="capability__item-topic">Меняет мир<br> вокруг</h3>
+            <p class="capability__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="capability__item capability__item--friends">
+            <h3 class="capability__item-topic">Заводит<br> новых друзей</h3>
+            <p class="capability__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+        </ul>
+        <div class="capability-effect">
+          <h3 class="capability__item-topic capability-effect__item-topic">Эффект на 24 часа!</h3>
+          <p class="capability__item-text capability-effect__item-text">Британские ученые провели исследования и
+            доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="link-detals" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="review__list review__list--flipping slider__list">
+          <blockquote class="review__item slider__item">
+            <div class="review__author-info">
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="review__author-about">25 лет, водитель трамвая</p>
+            </div>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="price">
+      <h2 class="visually-hidden">Стоимость</h2>
+      <div class="price__wrapper">
+        <table class="price-table slider">
+          <tr class="price-table__title slider__list">
+            <th class="column-tariff"></th>
+            <!--  как правильно сделать сдвиг шапки (заголовков колонок?) пустая ячейка выше, походу, не вариант -->
+            <th class="column-tariff slider__item">База<br><span>1,99 USD</span></th>
+            <th class="column-tariff slider__item column-tariff--hit">Стандарт<br><span>3,99 USD</span></th>
+            <th class="column-tariff slider__item">Анлим<br><span>9,99 USD</span></th>
+          </tr>
+          <tr class="row-fukcion">
+            <td class="row-fukcion__name">Розовый фильтр</td>
+            <td class="cell-table cell-table--yes">x</td>
+            <td class="cell-table cell-table--yes">x</td>
+            <td class="cell-table cell-table--yes">x</td>
+          </tr>
+          <tr class="row-fukcion">
+            <td class="row-fukcion__name">Смайлики</td>
+            <td class="cell-table cell-table--no">o</td>
+            <td class="cell-table cell-table--yes">x</td>
+            <td class="cell-table cell-table--yes">x</td>
+          </tr>
+          <tr class="rov-fukcion">
+            <td class="row-fukcion__name">Комментарии</td>
+            <td class="cell-table cell-table--no">o</td>
+            <td class="cell-table cell-table--no">o</td>
+            <td class="cell-table cell-table--yes">x</td>
+          </tr>
+        </table>
+        <p class="price-table__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="contacts">
+      <h3 class="visually-hidden">Наши контакты</h3>
+      <div class="contacts__wrapper">
+        <p class="slogan slogan-contacts">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts-phone__item">
+            <b class="contacts-invitation">Звоните:</b>
+            <a class="contacts__phone" href="tel:+78125556666">
+              <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+            </a>
+          </li>
+          <li class="contacts__item contacts-address__item">
+            <b class="contacts-invitation">Приезжайте в гости:</b>
+            <address class="contacts__address">
+              г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </address>
+          </li>
+          <li class="contacts__item contacts-email__item">
+            <b class="contacts-invitation">Пишите:</b>
+            <a class="contacts__email" href="mailto:">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/" width="" height="" alt="Логотип приложения Пинк">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--tvitter" href="https://tvitter.com/htmlacademy">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютьюбе</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="logo-HTML-academy" src="img/" width="" height="" alt="Логотип HTML академии">
+          </a>
+        </div>
+      </div>
+  </footer>
+</body>
 </html>
