@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/" width="" height="" alt="Логотип приложения Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="concourse.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="concourse">
+      <h1 class="visually-hidden">Прими участие в конкурсе Pink</h1>
+      <div class="concourse__wrapper">
+        <div class="concourse-invitation">
+          <p class="slogan slogan-concource">Конкурс на самое безбашенное путешествие с Пинк</p>
+        </div>
+        <div class="concourse__forms">
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="filter-choice__name-os">
+              <div class="concourse-form-name__list">
+                <ul class="concourse-form-name__item">
+                  <li>
+                    <label class="label label-form-name" for="surname-input">Фамилия:</label>
+                    <input class="input surname__input" id="surname-input" type="text" name="surname-input"
+                      placeholder="Укажите фамилию *" required />
+
+                  </li>
+                  <li class="concourse-form-name__item">
+                    <label class="label label-form-name" for="name-input">Имя:</label>
+                    <input class="input name__input" id="name-input" type="text" name="name-input"
+                      placeholder="Введите ваше имя *" required />
+
+                  </li>
+                  <li class="concourse-form-name__item">
+                    <label class="label label-form-name" for="patronymic-input">Отчество:</label>
+                    <input class="input patronymic-input" id="patronymic-input" type="text" name="patronymic-input"
+                      placeholder="Ну и отчество тоже" />
+                  </li>
+                </ul>
+
+              </div>
+              <div class="concourse-form__os">
+                <fieldset class="form-title form-title__radio">
+                  <legend class="filter-block-title filter-block-title__radio">С каким приложением путешествовали?
+                  </legend>
+                  <ul class="filter-radio__list">
+                    <li class="filter-radio__item filter-radio-ios__item">
+                      <input class="filter-radio__input" type="radio" name="choice-os" value="ios" id="filter-ios"
+                        checked />
+                      <label class="label filter-radio__label" for="filter-ios">Pink для iOS</label>
+                    </li>
+                    <li class="filter-radio__item filter-radio-android__item">
+                      <input class="filter-radio__input" type="radio" name="choice-os" value="android"
+                        id="filter-android" />
+                      <label class="label filter-radio__label" for="filter-android">Pink на Android</label>
+                    </li>
+                    <li class="filter-radio__item filter-radio-windows__item">
+                      <input class="filter-radio__input" type="radio" name="choice-os" value="Windows"
+                        id="filter-windows" />
+                      <label class="label filter-radio__label" for="filter-windows">Windows Phone</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="concourse-form__contacts">
+                <fieldset class="form-title form-title__contacts">
+                  <legend class="filter-block-title filter-block-title__contacts">Контактная информация
+                  </legend>
+                  <p class="contact__item contact-phone__item">
+                    <input class="input input-phone" id="contact-name" type="text" name="phone"
+                      placeholder="Номер, пожалуйста" />
+                    <label class="label-form" for="contact-name">Номер телефона</label>
+                  </p>
+                  <p class="contact__item contact-email__item">
+                    <input class="input input-email" id="contact-email" type="text" name="email"
+                      placeholder="Введите почту *" required />
+                    <label class="label-form" for="contact-email">Адрес почты</label>
+                  </p>
+                </fieldset>
+              </div>
+              <div class="progress-filter">
+                <fieldset class="form-title form-title__progress">
+                  <legend class="filter-block-title filter-block-title__progress">Ваши безбашенные достижения в
+                    путешествии
+                  </legend>
+                  <ul class="progress-filter__list">
+                    <li class="progress-filter__item">
+                      <input class="input custom-checkbox-input" type="checkbox" name="selfie" id="filter-selfie"
+                        checked />
+                      <label class="custom-checkbox-label" for="filter-selfie">
+                        <em class="custom-checkbox--flap"></em>
+                        Сделал селфи с акулой
+                      </label>
+                    </li>
+                    <li class="progress-filter__item">
+                      <input class="input custom-checkbox-input" type="checkbox" name="see" id="filter-see" />
+                      <label class="custom-checkbox-label" for="filter-see">
+                        <em class="custom-checkbox--flap"></em>
+                        Видел Чака Норриса
+                      </label>
+                    </li>
+                    <li class="progress-filter__item">
+                      <input class="input custom-checkbox-input" type="checkbox" name="withheld" id="filter-withheld"
+                        checked />
+                      <label class="custom-checkbox-label" for="filter-withheld">
+                        <em class="custom-checkbox--flap"></em>
+                        Удержал башню
+                      </label>
+                    </li>
+                    <li class="progress-filter__item">
+                      <input class="input custom-checkbox-input" type="checkbox" name="burned" id="filter-burned"
+                        checked />
+                      <label class="custom-checkbox-label" for="filter-burned">
+                        <em class="custom-checkbox--flap"></em>
+                        Обгорел на пляже
+                      </label>
+                    </li>
+                    <li class="progress-filter__item">
+                      <input class="input custom-checkbox-input" type="checkbox" name="buy" id="filter-buy" />
+                      <label class="custom-checkbox-label" for="filter-buy">
+                        <em class="custom-checkbox--flap"></em>
+                        Накупил сувениров
+                      </label>
+                    </li>
+                    <li class="progress-filter__item">
+                      <input class="input custom-checkbox-input" type="checkbox" name="smash" id="filter-smash" />
+                      <label class="custom-checkbox-label" for="filter-smash">
+                        <em class="custom-checkbox--flap"></em>
+                        Разгромил отель
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="impress">
+                <fieldset class="form-title form-title__impress">
+                  <legend class="filter-block-title filter-block-title__impress">Опишите свои эмоции
+                  </legend>
+                  <textarea class="impress-text" name="text" id="impress-text" cols="50"
+                    rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+                </fieldset>
+              </div>
+            </div>
+            <div class="sent-form">
+              <button class="button button-concourse-forms" type="submit">Отправить форму</button>
+            </div>
+            <div class="form__legend">
+              <p class="text-form__legend">
+                <small>
+                  * — обязательные для заполнения поля
+                </small>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="popup-succes popup-succes--active">
+          <b class="popup-succes__topic">Ваша заявка отправлена</b>
+          <p class="popup-succes__text">Спасибо за ваше участие, ваша заявка уже<br> поступила к нам. В ближайшее время мы<br> рассмотрим ее и
+            оповестим вас.</p>
+          <div class="button-popup__wrapper">
+            <a class="button popup-closure-button popup-closure-button--succes" href="#">Закрыть окно</a>
+          </div>
+        </div>
+        </div class="popup-failure popup-failure--active">
+        <b class="popup-succes__topic">Что-то пошло не так!</b>
+        <p class="popup-succes__text">Проверьте поля, выделенные красным,<br> скорее всего вы забыли их заполнить</p>
+        <div class="button-popup__wrapper">
+          <a class="button popup-closure-button popup-closure-button--failure" href="#" aria-label="Закрыть окно результата отправки формы">Ok</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/" width="" height="" alt="Логотип приложения Пинк">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--tvitter" href="https://tvitter.com/htmlacademy">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютьюбе</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="logo-HTML-academy" src="img/" width="" height="" alt="Логотип HTML академии">
+          </a>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
