@@ -14,7 +14,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a href="#">
               Главная
             </a>
           </li>
@@ -41,7 +41,9 @@
     <section class="availability">
       <h1 class="visually-hidden">Приожение Pink раскрасит вашу реальность</h1>
       <div class="availability__wrapper">
-        <p class="slogan slogan-availability">Взгляните<br> на жизнь<br> иначе!</p>
+        <div class="main-title main-title-index">
+          <p class="slogan slogan-availability">Взгляните<br> на жизнь<br> иначе!</p>
+        </div>
         <a class="link-download" href="#" download="">Скачать приложение</a>
         <ul class="available-imade__list">
           <li class="available-imade__item">IOS</li>
@@ -87,8 +89,7 @@
           <blockquote class="review__item slider__item">
             <div class="review__author-info">
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-                серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="review__author-about">25 лет, водитель трамвая</p>
             </div>
@@ -104,10 +105,68 @@
     <section class="price">
       <h2 class="visually-hidden">Стоимость</h2>
       <div class="price__wrapper">
-        <table class="price-table slider">
+        <ul class="main-row__list">
+          <li class="main-row__item radius__type1 column-widh--type2">
+            <p class="row-tariff slider__item">База<br><span>1,99 USD</span></p>
+          </li>
+          <li class="main-row__item  radius--type1 column-widh--type1">
+            <p class="row-tariff slider__item row-tariff--hit">Стандарт<br><span>3,99 USD</span></p>
+          </li>
+          <li class="main-row__item  radius--type2 column-widh--type1">
+            <p class="row-tariff slider__item">Анлим<br><span>9,99 USD</span></p>
+          </li>
+        </ul>
+        <ul class="pink-filter-row__list">
+          <li class="pink-filter-row__item radius--type1 column-widh--type1">
+            <span class="pink-filter-row__content">Розовый фильтр</span>
+          </li>
+          <li class="pink-filter-row__item radius--type3 column-widh--type2">
+            <span class="pink-filter-row__content pink-filter-row__content--yes">v</span>
+          </li>
+          <li class="pink-filter-row__item radius--type3 column-widh--type1">
+            <span class="pink-filter-row__content pink-filter-row__content--yes">v</span>
+          </li>
+          <li class="pink-filter-row__item radius--type2 column-widh--type2">
+            <span class="pink-filter-row__content pink-filter-row__content--yes">v</span>
+          </li>
+        </ul>
+        <ul class="smiles-row__list">
+          <li class="smiles-row__item radius--type3 column-widh--type1">
+            <span class="smiles-row__content">Смайлики</span>
+          </li>
+          <li class="smiles-row__item radius--type3 column-widh--type2">
+            <span class="smiles-row__content smiles-row__content--no">x</span>
+          </li>
+          <li class="smiles-row__item radius--type3 column-widh--type1">
+            <span class="smiles-row__content smiles-row__content--yes">v</span>
+          </li>
+          <li class="smiles-row__item radius--type3 column-widh--type2">
+            <span class="smiles-row__content smiles-row__content--yes">v</span>
+          </li>
+        </ul>
+        <ul class="comments-row__list">
+          <li class="comments-row__item radius--type4 column-widh--type1">
+            <span class="smiles-row__content">Комментарии</span>
+          </li>
+          <li class="comments-row__item radius--type3 column-widh--type2">
+            <span class="comments-row__content comments-row__content--no">x</span>
+          </li>
+          <li class="comments-row__item radius--type3 column-widh--type1">
+            <span class="comments-row__content comments-row__content--no">x</span>
+          </li>
+          <li class="comments-row__item radius--type5 column-widh--type2">
+            <span class="comments-row__content comments-row__content--yes">v</span>
+          </li>
+        </ul>
+        <p class="price-table__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+
+        <!--  <table class="price-table slider">
           <tr class="price-table__title slider__list">
             <th class="column-tariff"></th>
-            <!--  как правильно сделать сдвиг шапки (заголовков колонок?) пустая ячейка выше, походу, не вариант -->
             <th class="column-tariff slider__item">База<br><span>1,99 USD</span></th>
             <th class="column-tariff slider__item column-tariff--hit">Стандарт<br><span>3,99 USD</span></th>
             <th class="column-tariff slider__item">Анлим<br><span>9,99 USD</span></th>
@@ -130,12 +189,8 @@
             <td class="cell-table cell-table--no">o</td>
             <td class="cell-table cell-table--yes">x</td>
           </tr>
-        </table>
-        <p class="price-table__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        </table> -->
+
       </div>
     </section>
     <section class="contacts">
@@ -191,4 +246,5 @@
       </div>
   </footer>
 </body>
+
 </html>

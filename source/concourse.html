@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
 </head>
-
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
@@ -16,7 +14,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="site-list__item">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -43,10 +41,13 @@
     <section class="concourse">
       <h1 class="visually-hidden">Прими участие в конкурсе Pink</h1>
       <div class="concourse__wrapper">
-        <div class="concourse-invitation">
+        <div class="main-title main-title-concourse">
           <p class="slogan slogan-concource">Конкурс на самое безбашенное путешествие с Пинк</p>
         </div>
         <div class="concourse__forms">
+          <div class="text-block-concourse__wrapper">
+            <p class="text-block text-block__photo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          </div>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <div class="filter-choice__name-os">
               <div class="concourse-form-name__list">
@@ -55,13 +56,11 @@
                     <label class="label label-form-name" for="surname-input">Фамилия:</label>
                     <input class="input surname__input" id="surname-input" type="text" name="surname-input"
                       placeholder="Укажите фамилию *" required />
-
                   </li>
                   <li class="concourse-form-name__item">
                     <label class="label label-form-name" for="name-input">Имя:</label>
                     <input class="input name__input" id="name-input" type="text" name="name-input"
                       placeholder="Введите ваше имя *" required />
-
                   </li>
                   <li class="concourse-form-name__item">
                     <label class="label label-form-name" for="patronymic-input">Отчество:</label>
@@ -69,7 +68,6 @@
                       placeholder="Ну и отчество тоже" />
                   </li>
                 </ul>
-
               </div>
               <div class="concourse-form__os">
                 <fieldset class="form-title form-title__radio">
