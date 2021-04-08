@@ -1,4 +1,5 @@
 //Colors
+
 @basic-black: #000000;
 @basic-white: #ffffff;
 @main-pink: #d22856;
@@ -12,12 +13,21 @@
 @1special-green: #2aab6d;
 @2special-green: #1c9b5e;
 
+
+// Viewports
+
+@tablet-width: 660px;
+@desktop-width: 1200px;
+
+
 //Mixins
-.typical-title {
+
+.typical-title-mobile() {
   padding: 0;
   margin: 0;
+  font-style: normal;
   font-weight: 300;
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 24px;
+  line-height: 120%;
   color: @main-black;
 }

@@ -1,56 +1,119 @@
 .capability {
-  width: 1200px;
+  width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 343px;
+  background-color: @basic-white;
+  position: relative;
+}
+
+.capability::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 828px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background-image: url("../../img/img_mobile/grey_background_1.png");
+  background-size: 100%;
 }
 
 .capability__wrapper {
   padding: 0;
   margin: 0;
-  background-color: @basic-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.slogan-capability {
-  .typical-title;
+.capability__slogan-list {
+  padding: 0;
+  margin: 0;
+  width: 270px;
+  height: 100%;
+  text-align: center;
+}
+
+.capability__slogan-item {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.capability__slogan-text {
+  .typical-title-mobile;
   text-align: center;
 }
 
 .capability__list {
-  list-style-type: none;
+  width: 271px;
+  height: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("../../img/grey_background_corner.png");
 }
 
 .capability__item-topic {
   font-weight: bold;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   padding: 0;
-  margin: 0;
+  margin: 10px;
+  text-align: center;
 }
 
 .capability__item-text {
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   color: @main-black;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
-.capability-effect {
+.capability__list-effect {
   padding: 0;
   margin: 0;
   background-color: @main-grey;
+  display: none;
 }
 
-.link-detals {
+.capability__item-link {
   padding: 0;
   margin: 0;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: @main-pink;
+}
+
+.capability__item-friends::before {
+  content: "";
+  display: block;
+  width: 157px;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 540px;
+  background-image: url("../../img/img_mobile/iphone.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.capability__item-friends::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 245px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 578px;
+  background-image: url("../../img/img_mobile/iphone_screen.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
