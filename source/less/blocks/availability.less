@@ -1,50 +1,178 @@
 .availability {
-  background-image: url("../../img/background_big_index.jpg");
   padding: 0;
-  margin: 0 auto;
-  width: 1200px;
+  margin: 0 auto 40px;
+  width: 100%;
+  height: 100%;
+  background: @main-black; /* url("../../img/img_mobile/back_mobile.jpg") no-repeat; */
+  background-size: 100%;
+}
+
+.availability__wrapper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.availability__wrapper::before {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 286px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 61px;
+  background: url("../../img/img_mobile/phone_top_mobile.png");
+  background-repeat: no-repeat;
+}
+
+.availability__wrapper::after {
+  content: "";
+  display: block;
+  width: 111px;
+  height: 197px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 93px;
+  background: url("../../img/img_mobile/screen_top_mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.availability::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 229px;
+  background: url("../../img/img_mobile/back_mobile.jpg") no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .availability::before {
+    background: url("../../img/img_tablet/back_tablet.jpg") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.availability__main-title {
+  padding: 0;
+  margin-bottom: 280px;
+  width: 225px;
   height: 100%;
 }
 
-.main-title {
-  padding: 0;
-  margin: 0;
-}
-
-.slogan-availability {
-  .typical-title;
+.availability__slogan {
+  .typical-title-mobile;
   color: @basic-white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
 }
 
-.available-imade__list {
+.availability__downloads {
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  width: 100%;
+  min-height: 271px;
+  background-color: #1d2631;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
 }
 
-.link-download {
+@media (min-width: @tablet-width) {
+  .availability__downloads {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.availability__main-link {
   padding: 0;
   margin: 0;
-  width: 300px;
-  height: 56px;
+  width: 280px;
+  height: 55px;
   border: 3px solid @basic-white;
   box-sizing: border-box;
   border-radius: 29px;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: @basic-white;
-  text-decoration: none;
 }
 
-.available-text {
+@media (min-width: @tablet-width) {
+  .availability__main-link {
+    width: 300px;
+  }
+}
+
+.availability__sys-list {
+  width: 240px;
+  min-height: 50px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.availability__appstore-link::before {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 56px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: url("../../img/apple-logo.svg");
+}
+
+.availability__playmarket-link::before {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 47px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  background: url("../../img/android-logo.svg");
+}
+
+.availability__windows-link::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 41px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: url("../../img/microsoft-logo.svg");
+}
+
+.availability__text {
   padding: 0;
   margin: 0;
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
   color: @basic-white;
+  text-align: center;
 }

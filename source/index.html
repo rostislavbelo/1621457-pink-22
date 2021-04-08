@@ -1,120 +1,139 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/style.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" />
 </head>
-<body class="page__body">
+
+<body class="page-body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-white-desktop.png" width="147" height="40" alt="Логотип приложения Пинк">
+      <img class="page-header__logo-image" src="img/img_mobile/pink_logo_top.svg" width="74" height="23"
+        alt="Логотип приложения Пинк">
     </a>
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper"></div>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-content" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-content" href="photo.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-content" href="concourse.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a  class="site-list__item-content" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
-              HTML Academy
-            </a>
-          </li>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__item-content" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-content" href="photo.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-content" href="contest.html">
+            Конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-content" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+            HTML Academy
+          </a>
+        </li>
         </div>
-        </ul>
+      </ul>
     </nav>
   </header>
   <main class="page-main">
     <section class="availability">
-      <h1 class="visually-hidden">Приожение Pink раскрасит вашу реальность</h1>
+      <h1 class="visually-hidden">Приложение Pink раскрасит вашу реальность</h1>
       <div class="availability__wrapper">
-        <div class="main-title main-title-index">
-          <p class="slogan slogan-availability">Взгляните<br> на жизнь<br> иначе!</p>
+        <div class="availability__main-title">
+          <p class="availability__slogan">Взгляните на жизнь иначе!</p>
         </div>
-        <a class="link-download" href="#" download="">Скачать приложение</a>
-        <ul class="available-imade__list">
-          <li class="available-imade__item">IOS</li>
-          <li class="available-imade__item">Android</li>
-          <li class="available-imade__item">Windows Phone</li>
-        </ul>
-        <p class="available-text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+        <div class="availability__downloads">
+          <a class="availability__main-link" href="#" download="">Скачать приложение</a>
+          <ul class="availability__sys-list">
+            <li class="availability__sys-item">
+              <a class="availability__appstore-link" href="#" aria-label="Наше приложение в AppStore"></a>
+            </li>
+            <li class="availability__sys-item">
+              <a class="availability__playmarket-link" href="#" aria-label="Наше приложение в Play Market Android"></a>
+            </li>
+            <li class="availability__sys-item">
+              <a class="availability__windows-link" href="#" aria-label="Наше приложение для OS Windows Phone"></a>
+            </li>
+          </ul>
+          <p class="availability__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
     <section class="capability">
       <h2 class="visually-hidden">Возможности приложения Pink</h2>
       <div class="capability__wrapper">
-        <p class="slogan slogan-capability">Устали от серости мегаполиса?<br> Нам есть, что вам<br> предложить!</p>
+        <ul class="capability__slogan-list">
+          <li class="capability__slogan-item">
+          <p class="capability__slogan-text">Устали от серости мегаполиса?</p>
+          </li>
+          <li class="capability__slogan-item">
+          <p class="capability__slogan-text">Нам есть, что вам предложить!</p>
+          </li>
+        </ul>
         <ul class="capability__list">
-          <li class="capability__item capability__item--mood">
-            <h3 class="capability__item-topic">Поднимает<br> настроение</h3>
+          <li class="capability__item">
+            <h3 class="capability__item-topic">Поднимает настроение</h3>
             <p class="capability__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </li>
-          <li class="capability__item capability__item--change">
-            <h3 class="capability__item-topic">Меняет мир<br> вокруг</h3>
+          <li class="capability__item">
+            <h3 class="capability__item-topic">Меняет мир вокруг</h3>
             <p class="capability__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
           </li>
-          <li class="capability__item capability__item--friends">
-            <h3 class="capability__item-topic">Заводит<br> новых друзей</h3>
+          <li class="capability__item capability__item-friends">
+            <h3 class="capability__item-topic">Заводит новых друзей</h3>
             <p class="capability__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
           </li>
         </ul>
-        <div class="capability-effect">
-          <h3 class="capability__item-topic capability-effect__item-topic">Эффект на 24 часа!</h3>
-          <p class="capability__item-text capability-effect__item-text">Британские ученые провели исследования и
+        <div class="capability__list-effect">
+          <h3 class="capability__item-topic">Эффект на 24 часа!</h3>
+          <p class="capability__item-text">Британские ученые провели исследования и
             доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="link-detals" href="#">Узнать больше об исследовании</a>
+          <a class="capability__item-link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </section>
     <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о нас</h2>
       <div class="reviews__wrapper slider">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="review__list review__list--flipping slider__list">
-          <blockquote class="review__item slider__item">
-            <div class="review__author-info">
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+        <div class="reviews__list reviews__list--flipping slider__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="review__text review__author-about">25 лет, водитель трамвая</p>
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__text author-about">25 лет, водитель трамвая</p>
             </div>
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <a class="slider__toggle slider__toggle--current" href="#" aria-label="Первая страница слайдера">1</a>
+          <a class="slider__toggle" href="#" aria-label="Вторая страница слайдера">2</a>
+          <a class="slider__toggle" href="#" aria-label="Третья страница слайдера">3</a>
         </p>
       </div>
     </section>
-    <section class="price">
+    <!--     <section class="price">
       <h2 class="visually-hidden">Стоимость</h2>
-      <div class="price__wrapper">
+      <div class="price__table slider">
         <ul class="row__list main-row__list">
           <li class="main-row__item radius__type1 column-widh--type2">
-            <p class="row-tariff slider__item">База<br><span>1,99 USD</span></p>
+            <p class="row-tariff slider__item">База<span>1,99 USD</span></p>
           </li>
           <li class="main-row__item  radius--type1 column-widh--type1">
-            <p class="row-tariff slider__item row-tariff--hit">Стандарт<br><span>3,99 USD</span></p>
+            <p class="row-tariff slider__item row-tariff--hit">Стандарт<span>3,99 USD</span></p>
           </li>
           <li class="main-row__item  radius--type2 column-widh--type1">
-            <p class="row-tariff slider__item">Анлим<br><span>9,99 USD</span></p>
+            <p class="row-tariff slider__item">Анлим<span>9,99 USD</span></p>
           </li>
         </ul>
         <ul class="row__list pink-filter-row__list">
@@ -159,66 +178,73 @@
             <span class="comments-row__content comments-row__content--yes">v</span>
           </li>
         </ul>
-        <p class="price-table__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="price__toggles slider__toggles">
+          <a class="slider__toggle" href="#" aria-label="Первая страница слайдера по ценам">1</a>
+          <a class="slider__toggle slider__toggle--current" href="#" aria-label="Вторая страница слайдера по ценам">2</a>
+          <a class="slider__toggle" href="#" aria-label="Третья страница слайдера по ценам">3</a>
         </p>
       </div>
-    </section>
+    </section> -->
     <section class="contacts">
       <h3 class="visually-hidden">Наши контакты</h3>
       <div class="contacts__wrapper">
-        <p class="slogan slogan-contacts">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
-          <li class="contacts__item contacts-phone__item">
-            <p class="contacts-invitation">Звоните:</p>
-            <a class="contacts-invitation__data contacts__phone" href="tel:+78125556666">
+          <li class="contacts__item contacts__item-phone">
+            <p class="contacts__invitation">Звоните:</p>
+            <a class="contacts__data contacts__phone" href="tel:+78125556666">
               <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
             </a>
           </li>
-          <li class="contacts__item contacts-address__item">
-            <p class="contacts-invitation">Приезжайте в гости:</p>
-            <address class="contacts-invitation__data contacts__address">
-              г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8
-            </address>
-          </li>
-          <li class="contacts__item contacts-email__item">
-            <p class="contacts-invitation">Пишите:</p>
-            <a class="contacts-invitation__data contacts__email" href="mailto:">
+          <li class="contacts__item contacts__item-email">
+            <p class="contacts__invitation">Пишите:</p>
+            <a class="contacts__data contacts__email" href="mailto:">
               mail@htmlacademy.ru
             </a>
           </li>
+          <li class="contacts__item contacts__item-address">
+            <p class="contacts__invitation">Приезжайте в гости:</p>
+            <address class="contacts__data contacts__address">
+              ул. Большая Конюшенная 19/8
+            </address>
+          </li>
         </ul>
-        <img class="map-img" src="img/map.jpg" width="1200" height="502" alt="Фрагмент карты города">
+        <img class="contacts__map-img" src="img/img_mobile/map_mobile.jpg" width="320" height="200"
+          alt="Фрагмент карты города">
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logotype_blue_desktop.png" width="147" height="40" alt="Логотип приложения Пинк">
+        <img class="page-footer__logo-image" src="img/img_mobile/logotype_bottom_mobile.svg" width="145" height="40"
+          alt="Логотип приложения Пинк">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--tvitter" href="https://tvitter.com/htmlacademy" aria-label="Мы в Твиттере">Т.</a>
+            <a class="social__link social__link--tvitter" href="https://tvitter.com/htmlacademy"
+              aria-label="Мы в Твиттере"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">Ф.</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+              aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы на Ютьюбе">Ю.</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
+              aria-label="Мы на Ютьюбе"></a>
           </li>
         </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="logo-HTML-academy" src="img/html_academy_logo.png" width="27" height="34" alt="Логотип HTML академии">
-          </a>
-        </div>
       </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__link-image" src="img/img_mobile/html_academy_logo.svg" width="27" height="34"
+            alt="Логотип HTML академии">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
