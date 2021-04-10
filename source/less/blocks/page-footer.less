@@ -12,7 +12,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -21,27 +20,33 @@
   height: 40px;
 }
 
+.page-footer__logo {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
 .page-footer__social {
   padding: 0;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
 .social__list {
   padding: 0;
   margin: 0;
-  width: 300px;
+  width: 191px;
   display: flex;
   justify-content: space-around;
   position: relative;
 }
 
-.copyright__text {
+/* .copyright__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: @main-black;
+  margin-left: -9px;
 }
-
+ */
 .social__link {
   display: block;
   width: 48px;
@@ -49,6 +54,27 @@
   border-radius: 50%;
   border: 3px solid rgba(40, 54, 69, 0.1);
   position: relative;
+}
+
+.copyright__link {
+  padding-right: 40px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  position: relative;
+}
+
+.copyright__link::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  position: absolute;
+  left: 103px;
+  top: -8px;
+  background-image: url("../../img/img_mobile/html_academy_logo.svg");
+  background-repeat: no-repeat;
 }
 
 .social__link--tvitter::after {
