@@ -1,8 +1,7 @@
 .availability {
   padding: 0;
-  margin: 0 auto 40px;
+  margin: 24px auto 0;
   width: 100%;
-  height: 100%;
   background: @main-black; /* url("../../img/img_mobile/back_mobile.jpg") no-repeat; */
   background-size: 100%;
 }
@@ -17,6 +16,19 @@
   position: relative;
 }
 
+@media (min-width: @tablet-width) {
+  .availability__wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+  }
+}
+
 .availability__wrapper::before {
   content: "";
   display: block;
@@ -25,9 +37,19 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 61px;
+  top: 86px;
   background: url("../../img/img_mobile/phone_top_mobile.png");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .availability__wrapper::before {
+    width: 660px;
+    height: 545px;
+    top: 52px;
+    background: url("../../img/img_tablet/phone_top_tablet.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .availability__wrapper::after {
@@ -38,9 +60,21 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 93px;
+  top: 119px;
   background: url("../../img/img_mobile/screen_top_mobile.jpg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .availability__wrapper::after {
+    width: 195px;
+    height: 346px;
+    top: 106px;
+    left: 50%;
+    transform: translateX(21%);
+    background: url("../../img/img_tablet/screen_top_tablet.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .availability::before {
@@ -51,7 +85,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 229px;
+  top: 259px;
   background: url("../../img/img_mobile/back_mobile.jpg") no-repeat;
   background-size: 100%;
 }
@@ -65,9 +99,15 @@
 
 .availability__main-title {
   padding: 0;
-  margin-bottom: 280px;
-  width: 225px;
-  height: 100%;
+  margin-bottom: 314px;
+  max-width: 300px;
+}
+
+@media (min-width: @tablet-width) {
+  .availability__main-title {
+    margin: 71px 0 1px 47px;
+    max-width: 245px;
+  }
 }
 
 .availability__slogan {
@@ -76,7 +116,14 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .availability__slogan {
+    .typical-title-tablet;
+    color: @basic-white;
+    line-height: 120%;
+  }
 }
 
 .availability__downloads {
@@ -88,19 +135,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .availability__downloads {
     background-color: rgba(255, 255, 255, 0);
+    width: auto;
+    margin-left: 20px;
   }
 }
 
 .availability__main-link {
   padding: 0;
-  margin: 0;
+  margin: 28px 0 58px;
   width: 280px;
   height: 55px;
   border: 3px solid @basic-white;
@@ -118,6 +166,7 @@
 @media (min-width: @tablet-width) {
   .availability__main-link {
     width: 300px;
+    margin-bottom: 84px;
   }
 }
 
@@ -139,8 +188,8 @@
   width: 47px;
   height: 56px;
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: -26px;
+  left: 7%;
   background: url("../../img/apple-logo.svg");
 }
 
@@ -152,7 +201,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 20px;
+  top: -20px;
   background: url("../../img/android-logo.svg");
 }
 
@@ -162,17 +211,40 @@
   width: 44px;
   height: 41px;
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: -14px;
+  right: 7%;
   background: url("../../img/microsoft-logo.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .availability__appstore-link::before {
+    top: -38px;
+  }
+
+  .availability__playmarket-link::before {
+    top: -33px;
+  }
+
+  .availability__windows-link::before {
+    top: -30px;
+    right: 8%;
+  }
 }
 
 .availability__text {
   padding: 0;
-  margin: 0;
+  margin: 0 0 32px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: @basic-white;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .availability__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 114px;
+  }
 }
