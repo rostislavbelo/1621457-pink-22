@@ -5,6 +5,12 @@
   margin: 0 auto 32px;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin-bottom: 29px;
+  }
+}
+
 .contacts__wrapper {
   padding: 0;
   margin: 0;
@@ -15,7 +21,14 @@
   .typical-title-mobile;
   text-align: center;
   padding: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__slogan {
+    .typical-title-tablet;
+    margin-bottom: 33px;
+  }
 }
 
 .contacts__list {
@@ -24,14 +37,35 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 270px;
-  height: 100%;
+  width: 100%;
   position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    margin: 0 auto 23px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+  }
 }
 
 .contacts__item {
   padding: 0;
   margin-bottom: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__item {
+    margin: 0;
+    padding: 0 41px 42px 58px;
+  }
+
+  .contacts__item-address {
+    margin-right: 16px;
+    padding-bottom: 0;
+  }
 }
 
 .contacts__invitation {
@@ -41,6 +75,12 @@
   font-size: 18px;
   line-height: 25px;
   color: @main-black;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__invitation {
+    padding-bottom: 3px;
+  }
 }
 
 .contacts__data {
@@ -58,11 +98,20 @@
   height: 100%;
 }
 
+/* @media (min-width: @tablet-width) {
+  .contacts__map-img {
+    width: 100%;
+    height: 374px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+ */
 .contacts__wrapper::before {
   content: "";
   display: block;
   width: 100%;
-  height: 123px;
+  height: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -70,4 +119,13 @@
   background-image: url("../../img/img_mobile/triangle_white_footer.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper::before {
+    top: 305px;
+    background-image: url("../../img/img_tablet/triangl_tablet.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }

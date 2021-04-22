@@ -1,6 +1,7 @@
 .main-nav {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .main-nav__wrapper {
@@ -9,9 +10,18 @@
 }
 
 .main-nav__toggle {
-  margin: 0;
-  padding: 0;
   display: none;
+  position: absolute;
+  top: -46px;
+  right: 20px;
+  z-index: 2;
+  width: 23px;
+  height: 23px;
+  background-color: @main-black;
+  background-image: url("../../img/img_mobile/close_menu_btn.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
 }
 
 .main-nav__list {
@@ -19,7 +29,7 @@
   margin: 0;
 }
 
-.site-list__item {
+.main-nav__item {
   padding: 0;
   margin: 0 auto;
   display: flex;
@@ -30,7 +40,7 @@
   box-shadow: 0 1px 0 #000000, inset 0 2px 0 rgba(255, 255, 255, 0.15);
 }
 
-.site-list__item-content {
+.main-nav__item-content {
   padding: 16px 0 16px;
   font-weight: bold;
   font-size: 18px;
