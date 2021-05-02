@@ -4,11 +4,69 @@
   padding: 0;
   margin: 0 auto 76px;
   width: 100%;
-  background-image: url("../../img/img_tablet/timer.png");
+  /*   background-image: url("../../img/img_tablet/timer.png");
   background-repeat: no-repeat;
-  background-position: 20px 53px;
+  background-position: 20px 53px; */
+}
+
+@media (min-width: @tablet-width) {
+  .effects {
+    display: flex;
+    justify-content: center;
+    background-color: @basic-white;
+    position: relative;
+    /*  background-image: url("../../img/img_tablet/timer.png");
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%); */
+  }
+}
+
+.effects__list {
+  padding: 0 0 0 329px;
+  margin-top: 66px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 330px;
 
   &::before {
+    content: "";
+    display: block;
+    width: 238px;
+    height: 276px;
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-310px);
+    background-image: url("../../img/img_tablet/timer.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "24";
+    display: block;
+    width: 202px;
+    height: 202px;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-292px);
+    border: 16px solid #d22856;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 163px;
+    text-align: center;
+    color: #d22856;
+  }
+
+  /*  &::before {
     content: "";
     display: block;
     width: 202px;
@@ -33,27 +91,7 @@
     background-image: url("../../img/img_tablet/24.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: 2;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .effects {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: @basic-white;
-    position: relative;
-  }
-}
-
-.effects__list {
-  padding: 0;
-  margin-top: 66px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 330px;
+    z-index: 2; */
 }
 
 .effects__item-topic {
