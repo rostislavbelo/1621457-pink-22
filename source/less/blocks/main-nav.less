@@ -30,6 +30,14 @@
   list-style-type: none;
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    padding: 41px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .main-nav__item {
   padding: 0;
   margin: 0 auto;
@@ -41,6 +49,13 @@
   box-shadow: 0 1px 0 #000000, inset 0 2px 0 rgba(255, 255, 255, 0.15);
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav__item {
+    display: block;
+    box-shadow: none;
+  }
+}
+
 .main-nav__item-content {
   padding: 16px 0 16px;
   font-weight: bold;
@@ -48,4 +63,12 @@
   line-height: 32px;
   text-transform: uppercase;
   color: @basic-white;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item-content {
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: none;
+  }
 }
