@@ -49,6 +49,7 @@
   padding: 0;
   margin: 41px 0 73px;
   text-align: center;
+  list-style-type: none;
 }
 
 .capability__slogan-item {
@@ -82,14 +83,14 @@
   max-width: 400px;
   padding: 0 24px;
   margin: 0;
+  list-style-type: none;
 }
 
 @media (min-width: @tablet-width) {
   .capability__list {
     max-width: 307px;
-    padding: 0 23px;
+    padding: 0 0 0 307px;
     margin: 0;
-    align-self: flex-end;
   }
 }
 
@@ -171,7 +172,8 @@
     width: 268px;
     height: 547px;
     top: 244px;
-    left: 23%;
+    left: 50%;
+    transform: translateX(-116%);
     background-image: url("../../img/img_tablet/iphone.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -180,9 +182,10 @@
   .capability__item-friends::after {
     width: 237px;
     height: 421px;
-    top: 304px;
-    left: 23%;
-    background-image: url("../../img/img_tablet/iphone_screen.jpg");
+    top: 305px;
+    left: 50%;
+    transform: translateX(-125%);
+    background-image: url("../../img/img_tablet/iphone_screen_tablet.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
