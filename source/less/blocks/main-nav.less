@@ -32,9 +32,10 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
-    padding: 41px 0 0 0;
+    padding: 23px 0 0 150px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto auto;
+    column-gap: 79px;
   }
 }
 
@@ -54,6 +55,10 @@
     display: block;
     box-shadow: none;
   }
+
+  .main-nav__item--active {
+    border-bottom: 2px solid @basic-white;
+  }
 }
 
 .main-nav__item-content {
@@ -67,8 +72,10 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__item-content {
+    padding-bottom: 3px;
     font-weight: normal;
     font-size: 18px;
     text-transform: none;
+    display: block;
   }
 }
