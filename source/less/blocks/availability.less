@@ -52,6 +52,21 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .availability__wrapper::before {
+    width: 1050px;
+    height: 645px;
+    top: 40px;
+    transform: translateX(-43%);
+    background: url("../../img/phone_desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone_desktop@2x.png");
+      background-size: 100%;
+    }
+  }
+}
+
 .availability__wrapper::after {
   content: "";
   display: block;
@@ -77,6 +92,23 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .availability__wrapper::after {
+    width: 230px;
+    height: 408px;
+    top: 105px;
+    left: 50%;
+    transform: translateX(52%);
+    background: url("../../img/screen_desktop.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/screen_desktop@2x.jpg");
+      background-size: 100%;
+    }
+  }
+}
+
 .availability::before {
   content: "";
   display: block;
@@ -94,6 +126,24 @@
   .availability::before {
     background: url("../../img/img_tablet/back_tablet.jpg") no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img_tablet/back-tablet@2x.jpg");
+      background-size: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability::before {
+    background: url("../../img/back-desktop.jpg") no-repeat;
+    background-size: 100%;
+    top: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/back-desktop@2x.jpg");
+      background-size: 100%;
+    }
   }
 }
 
@@ -110,6 +160,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .availability__main-title {
+    margin: 40px 639px 9px 0;
+  }
+}
+
 .availability__slogan {
   .typical-title-mobile;
   color: @basic-white;
@@ -123,6 +179,13 @@
     .typical-title-tablet;
     color: @basic-white;
     line-height: 120%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__slogan {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
@@ -143,6 +206,12 @@
     background-color: rgba(255, 255, 255, 0);
     width: auto;
     margin-right: 321px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__downloads {
+    margin-right: 640px;
   }
 }
 
@@ -167,6 +236,14 @@
   .availability__main-link {
     width: 300px;
     margin-bottom: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__main-link {
+    font-size: 21px;
+    height: 56px;
+    margin-bottom: 126px;
   }
 }
 
@@ -232,6 +309,20 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .availability__appstore-link::before {
+    top: -58px;
+  }
+
+  .availability__playmarket-link::before {
+    top: -51px;
+  }
+
+  .availability__windows-link::before {
+    top: -47px;
+  }
+}
+
 .availability__text {
   padding: 0;
   margin: 0 0 32px;
@@ -247,5 +338,11 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 114px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__text {
+    margin-bottom: 124px;
   }
 }
