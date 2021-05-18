@@ -1,0 +1,30 @@
+.reviews__flipping {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .slider-flipping__item-down {
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-left: 2px solid rgba(40, 54, 69, 0.3);
+    top: 51px;
+    left: 50%;
+    transform: translateX(-464px) rotate(-45deg);
+  }
+
+  .slider-flipping__item-next {
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-right: 2px solid rgba(40, 54, 69, 0.3);
+    top: 51px;
+    right: 50%;
+    transform: translateX(464px) rotate(45deg);
+  }
+}

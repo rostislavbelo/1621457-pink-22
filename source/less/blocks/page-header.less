@@ -1,6 +1,6 @@
 .page-header {
   padding-bottom: 0;
-  margin: 0 auto 28px;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   background: @main-black;
@@ -13,7 +13,7 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    margin: 0 auto 66px;
+    margin: 0 auto 24px;
   }
 }
 
@@ -23,6 +23,7 @@
     justify-content: center;
     background: rgba(0, 0, 0, 0.3);
     margin-bottom: 59px;
+    width: 940px;
   }
 }
 
@@ -41,7 +42,7 @@
   @media (min-width: @desktop-width) {
     .page-header__logo-container {
       box-shadow: none;
-      width: 14%;
+      width: 170px;
     }
   }
 }
@@ -94,14 +95,14 @@
   }
 }
 
-.page-header__logo-image:hover {
+.page-header__logo:hover .page-header__logo-image:hover {
   fill: @main-pink;
 }
 
-.page-header__logo-image:active {
+.page-header__logo:active .page-header__logo-image:active {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.page-header__logo-image:active .page-header__logo-image-stars:active {
+.page-header__logo:active .page-header__logo-image-stars:active {
   fill: @main-pink;
 }

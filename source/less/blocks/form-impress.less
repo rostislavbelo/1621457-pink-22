@@ -1,0 +1,30 @@
+.form-impress__title {
+  margin: 0;
+  text-align: center;
+  padding: 39px 0 16px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form-impress__title {
+    position: absolute;
+    padding: 0;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: @basic-white;
+    width: 261px;
+  }
+
+  .form-impress__text {
+    padding: 15px 0 27px 20px;
+    width: 77%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-impress__text {
+    padding: 13px 0 0 20px;
+    width: 795px;
+    height: 111px;
+  }
+}

@@ -82,124 +82,205 @@
         <div class="photo-gallery__main-photo">
           <a class="photo-gallery__main-photo-link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/galery/panorama-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/galery/panorama-tablet.jpg">
-              <img class="photo-gallery__main-photo-content" src="img/galery/panorama_mobile.jpg" width="320"
-                height="137" alt="Панорама дня" />
+              <source type="image/webp" media="(min-width: 1200px)" srcset="
+              img/galery/panorama-desktop.webp 1x,
+              img/galery/panorama-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 660px)" srcset="
+              img/galery/panorama-tablet.webp 1x,
+              img/galery/panorama-tablet@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 320px)" srcset="
+              img/galery/panorama-mobile.webp 1x,
+              img/galery/panorama-mobile.webp 2x" />
+              <source media="(min-width: 1200px)" srcset="
+              img/galery/panorama-desktop.jpg 1x,
+              img/galery/panorama-desktop@2x.jpg 2x" />
+              <source media="(min-width: 660px)" srcset="
+              img/galery/panorama-tablet.jpg 1x,
+              img/galery/panorama-tablet@2x.jpg 2x" />
+              <img class="photo-gallery__main-photo-content" src="./img/galery/panorama-mobile.jpg" srcset="
+              img/galery/panorama-mobile@2x.jpg 2x" alt="Панорама дня" />
             </picture>
             <span class="photo-gallery__lable-panorama">Панорама дня</span>
           </a>
           <p class="photo-gallery__main-photo-inf">
-            <cite class="photo-gallery__author-name">Анна<span class="photo-gallery__time-ago">(5 минут
+            <cite class="photo-gallery__author-name">Анна <span class="photo-gallery__time-ago">(5 минут
                 назад)</span></cite>
-            <span class="photo-gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и
+            <span class="photo-gallery__main-photo-comment">Прыгать или нет? Напишите в комментарии свой совет и
               смотрите&nbsp;прямую трансляцию в перископе, задавайте&nbsp;свои вопросы!</span>
-            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-            <span class="photo-gallery__likes">Нравится: 215</span>
+            <a class="photo-gallery__main-photo_like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__main-photo-likes">Нравится: 215</span>
           </p>
         </div>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
             <a class="photo-gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery/photo-1-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/galery/photo-1-tablet.jpg">
-                <img class="photo-gallery__content" src="img/galery/photo-1-mobile.jpg" width="280" height="180"
-                  alt="Пейзаж со штативом" />
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/galery/photo-1-desktop.webp 1x,
+                img/galery/photo-1-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/galery/photo-1-tablet.webp 1x,
+                img/galery/photo-1-tablet@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/galery/photo-1-mobile.webp 1x,
+                img/galery/photo-1-mobile@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                img/galery/photo-1-desktop.jpg 1x,
+                img/galery/photo-1-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="
+                img/galery/photo-1-desktop.jpg 1x,
+                img/galery/photo-1-desktop@2x.jpg 2x" />
+                <img class="photo-gallery__main-photo-content" src="img/galery/photo-1-mobile.jpg"
+                  srcset="img/galery/photo-1-mobile@2x.jpg 2x" alt="Пейзаж со штативом" />
               </picture>
             </a>
-            <p class="photo-gallery__photo-inf">
-              <cite class="photo-gallery__author-name">Левон<span class="photo-gallery__time-ago">(5 часов
-                  назад)</span></cite>
-              <span class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</span>
-              <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-              <span class="photo-gallery__likes">Нравится: 356</span>
-            </p>
+            <cite class="photo-gallery__author-name">
+              Левон <span class="photo-gallery__time-ago">(5 часов назад)</span>
+            </cite>
+            <p class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__likes">Нравится: 356</span>
           </li>
           <li class="photo-gallery__item">
             <a class="photo-gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery/photo-2-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/galery/photo-2-tablet.jpg">
-                <img class="photo-gallery__content" src="img/galery/photo-2-mobile.jpg" width="280" height="180"
-                  alt="Барабанная установка" />
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/galery/photo-2-desktop.webp 1x,
+                img/galery/photo-2-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/galery/photo-2-tablet.webp 1x,
+                img/galery/photo-2-tablet@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/galery/photo-2-mobile.webp 1x,
+                img/galery/photo-2-mobile@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                img/galery/photo-2-desktop.jpg 1x,
+                img/galery/photo-2-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="
+                img/galery/photo-2-desktop.jpg 1x,
+                img/galery/photo-2-desktop@2x.jpg 2x" />
+                <img class="photo-gallery__main-photo-content" src="img/galery/photo-2-mobile.jpg"
+                  srcset="img/galery/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка" />
               </picture>
             </a>
-            <p class="photo-gallery__photo-inf">
-              <cite class="photo-gallery__author-name">Антон<span class="photo-gallery__time-ago">(12 часов
-                  назад)</span></cite>
-              <span class="photo-gallery__comment">Соседи будут рады!</span>
-              <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-              <span class="photo-gallery__likes">Нравится: 666</span>
-            </p>
+            <cite class="photo-gallery__author-name">
+              Антон <span class="photo-gallery__time-ago">(12 часов назад)</span>
+            </cite>
+            <p class="photo-gallery__comment">Соседи будут рады!</p>
+            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__likes">Нравится: 666</span>
           </li>
           <li class="photo-gallery__item">
             <a class="photo-gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery/photo-3-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/galery/photo-3-tablet.jpg">
-                <img class="photo-gallery__content" src="img/galery/photo-3-mobile.jpg" width="280" height="180"
-                  alt="Облака за стеклом" />
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/galery/photo-3-desktop.webp 1x,
+                img/galery/photo-3-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/galery/photo-3-tablet.webp 1x,
+                img/galery/photo-3-tablet@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/galery/photo-3-mobile.webp 1x,
+                img/galery/photo-3-mobile@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                img/galery/photo-3-desktop.jpg 1x,
+                img/galery/photo-3-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="
+                img/galery/photo-3-desktop.jpg 1x,
+                img/galery/photo-3-desktop@2x.jpg 2x" />
+                <img class="photo-gallery__main-photo-content" src="img/galery/photo-3-mobile.jpg"
+                  srcset="img/galery/photo-3-mobile@2x.jpg 2x" alt="Облака за стеклом" />
               </picture>
             </a>
-            <p class="photo-gallery__photo-inf">
-              <cite class="photo-gallery__author-name">Борис<span class="photo-gallery__time-ago">(20 часов
-                  назад)</span></cite>
-              <span class="photo-gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</span>
-              <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-              <span class="photo-gallery__likes">Нравится: 215</span>
-            </p>
+            <cite class="photo-gallery__author-name">
+              Борис <span class="photo-gallery__time-ago">(20 часов назад)</span></cite>
+            <p class="photo-gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__likes">Нравится: 215</span>
           </li>
           <li class="photo-gallery__item">
             <a class="photo-gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery/photo-4-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/galery/photo-4-tablet.jpg">
-                <img class="photo-gallery__content" src="img/galery/photo-4-mobile.jpg" width="280" height="180"
-                  alt="Бахчевой рынок" />
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/galery/photo-4-desktop.webp 1x,
+                img/galery/photo-4-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/galery/photo-4-tablet.webp 1x,
+                img/galery/photo-4-tablet@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/galery/photo-4-mobile.webp 1x,
+                img/galery/photo-4-mobile@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                img/galery/photo-4-desktop.jpg 1x,
+                img/galery/photo-4-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="
+                img/galery/photo-4-mobile.jpg 1x,
+                img/galery/photo-4-mobile@2x.jpg 2x" />
+                <img class="photo-gallery__main-photo-content" src="img/galery/photo-4-mobile.jpg"
+                  srcset="img/galery/photo-4-mobile@2x.jpg 2x" alt="Бахчевой рынок" />
               </picture>
             </a>
-            <p class="photo-gallery__photo-inf">
-              <cite class="photo-gallery__author-name">Сергей<span class="photo-gallery__time-ago">(25 часов
-                  назад)</span></cite>
-              <span class="photo-gallery__comment">Самая кубанская в мире!</span>
-              <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-              <span class="photo-gallery__likes">Нравится: 4</span>
-            </p>
+            <cite class="photo-gallery__author-name">
+              Сергей <span class="photo-gallery__time-ago">(25 часов назад)</span></cite>
+            <p class="photo-gallery__comment">Самая кубанская в мире!</p>
+            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__likes">Нравится: 4</span>
           </li>
           <li class="photo-gallery__item">
             <a class="photo-gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery/photo-5-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/galery/photo-5-tablet.jpg">
-                <img class="photo-gallery__content" src="img/galery/photo-5-mobile.jpg" width="280" height="180"
-                  alt="Горный Пейзаж" />
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/galery/photo-5-desktop.webp 1x,
+                img/galery/photo-5-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/galery/photo-5-tablet.webp 1x,
+                img/galery/photo-5-tablet@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/galery/photo-5-mobile.webp 1x,
+                img/galery/photo-5-mobile@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                img/galery/photo-5-desktop.jpg 1x,
+                img/galery/photo-5-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="
+                img/galery/photo-5-desktop.jpg 1x,
+                img/galery/photo-5-desktop@2x.jpg 2x" />
+                <img class="photo-gallery__main-photo-content" src="img/galery/photo-5-mobile.jpg"
+                  srcset="img/galery/photo-5-mobile@2x.jpg 2x" alt="Горный Пейзаж" />
               </picture>
             </a>
-            <p class="photo-gallery__photo-inf">
-              <cite class="photo-gallery__author-name">Максим<span class="photo-gallery__time-ago">(40 часов
-                  назад)</span></cite>
-              <span class="photo-gallery__comment">Где снег-то?</span>
-              <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-              <span class="photo-gallery__likes">Нравится: 150</span>
-            </p>
+            <cite class="photo-gallery__author-name">
+              Максим <span class="photo-gallery__time-ago">(40 часов назад)</span></cite>
+            <p class="photo-gallery__comment">Где снег-то?</p>
+            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__likes">Нравится: 150</span>
           </li>
           <li class="photo-gallery__item">
             <a class="photo-gallery__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/galery/photo-6-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/galery/photo-6-tablet.jpg">
-                <img class="photo-gallery__content" src="img/galery/photo-6-mobile.jpg" width="280" height="180"
-                  alt="Закат в иллюминаторе" />
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/galery/photo-6-desktop.webp 1x,
+                img/galery/photo-6-desktop@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/galery/photo-6-tablet.webp 1x,
+                img/galery/photo-6-tablet@2x.webp 2x" />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/galery/photo-6-mobile.webp 1x,
+                img/galery/photo-6-mobile@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                img/galery/photo-6-desktop.jpg 1x,
+                img/galery/photo-6-desktop@2x.jpg 2x" />
+                <source media="(min-width: 660px)" srcset="
+                img/galery/panorama-tablet.jpg 1x,
+                img/galery/panorama-tablet@2x.jpg 2x" />
+                <img class="photo-gallery__main-photo-content" src="img/galery/photo-6-mobile.jpg"
+                  srcset="img/galery/photo-6-mobile@2x.jpg 2x" alt="Закат в иллюминаторе" />
               </picture>
             </a>
-            <p class="photo-gallery__photo-inf">
-              <cite class="photo-gallery__author-name">Надежда<span class="photo-gallery__time-ago">(45 часов
-                  назад)</span></cite>
-              <span class="photo-gallery__comment">Всем GM и взаимные лайки!</span>
-              <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
-              <span class="photo-gallery__likes">Нравится: 2560</span>
-            </p>
+            <cite class="photo-gallery__author-name">
+              Надежда <span class="photo-gallery__time-ago">(45 часов назад)</span></cite>
+            <p class="photo-gallery__comment">Всем GM и взаимные лайки!</p>
+            <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
+            <span class="photo-gallery__likes">Нравится: 2560</span>
           </li>
         </ul>
       </div>
@@ -211,10 +292,23 @@
       <div class="photo-upload__form">
         <a class="photo-upload__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/galery/photo-7-desktop.jpg">
-            <source media="(min-width: 660px)" srcset="img/galery/photo-7-tablet.jpg">
-            <img class="photo-upload__content" src="img/galery/photo-7-mobile.jpg" width="280" height="374"
-              alt="Фото для загрузки" />
+            <source type="image/webp" media="(min-width: 1200px)" srcset="
+            img/galery/photo-7-desktop.webp 1x,
+            img/galery/photo-7-desktop@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 660px)" srcset="
+            img/galery/photo-7-tablet.webp 1x,
+            img/galery/photo-7-tablet@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 320px)" srcset="
+            img/galery/photo-7-mobile.webp 1x,
+            img/galery/photo-7-mobile@2x.webp 2x" />
+            <source media="(min-width: 1200px)" srcset="
+            img/galery/photo-7-desktop.jpg 1x,
+            img/galery/photo-7-desktop@2x.jpg 2x" />
+            <source media="(min-width: 660px)" srcset="
+            img/galery/panorama-tablet.jpg 1x,
+            img/galery/panorama-tablet@2x.jpg 2x" />
+            <img class="photo-gallery__main-photo-content" src="img/galery/photo-7-mobile.jpg"
+              srcset="img/galery/photo-7-mobile@2x.jpg 2x" alt="Фото для загрузки" />
           </picture>
         </a>
         <div class="photo-upload__control">
@@ -223,9 +317,7 @@
               <a class="photo-upload__link" href="#" aria-label="Обрезка">
                 <svg class="photo-upload__control-icon photo-upload__control-icon--active" width="44" height="44"
                   viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32
-                  8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786
-                  10.9391 36 12 36H32V44H36V36H44V32H12Z" />
+                  <use xlink:href="./img/sprite.svg#icon-crop"></use>
                 </svg>
               </a>
             </li>
@@ -233,14 +325,7 @@
               <a class="photo-upload__link" href="#" aria-label="Насыщенность">
                 <svg class="photo-upload__control-icon" width="48" height="43" viewBox="0 0 48 43"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205
-                      6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205
-                      33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575
-                      33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59
-                      20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786
-                      36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42
-                      27.33 38 23 38 23Z" />
-                  <path d="M48 40H0V43H48V40Z" />
+                  <use xlink:href="./img/sprite.svg#icon-fill"></use>
                 </svg>
               </a>
             </li>
@@ -248,18 +333,7 @@
               <a class="photo-upload__link" href="#" aria-label="Контрастность">
                 <svg class="photo-upload__control-icon" width="32" height="32" viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866
-                      11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853
-                      24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078
-                      27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001
-                      16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355
-                      0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325
-                      12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394
-                      29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466
-                      29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687
-                      27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" />
-                  <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366
-                      15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" />
+                  <use xlink:href="./img/sprite.svg#icon-contrast"></use>
                 </svg>
               </a>
             </li>
