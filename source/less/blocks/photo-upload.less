@@ -51,7 +51,7 @@
     grid-template-columns: 300px 300px;
     gap: 19px;
     justify-content: center;
-    padding: 20px 0 16px;
+    padding: 20px 0 13px;
   }
 }
 
@@ -61,7 +61,7 @@
     grid-template-columns: 300px 480px;
     gap: 0;
     justify-content: center;
-    padding: 17px 0 20px;
+    padding: 17px 0 16px;
     width: 100%;
     margin: 0 auto;
   }
@@ -78,7 +78,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 442px;
+    min-height: 444px;
   }
 }
 
@@ -93,9 +93,39 @@
   }
 }
 
+.photo-upload__icon {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.photo-upload__link:hover .photo-upload__icon {
+  fill: #283645;
+  opacity: 0.5;
+}
+
+.photo-upload__icon--active {
+  fill: @main-pink;
+  opacity: 1;
+}
+
+.photo-upload__icon-crop {
+  width: 44px;
+  height: 44px;
+}
+
+.photo-upload__icon-fill {
+  width: 48px;
+  height: 43px;
+}
+
+.photo-upload__icon-contrast {
+  width: 32px;
+  height: 32px;
+}
+
 .photo-upload__link {
   padding: 0;
-  margin-bottom: 37px;
+  margin-bottom: 41px;
 }
 
 @media (min-width: @tablet-width) {
@@ -115,7 +145,7 @@
 .photo-upload__list-control-icons {
   width: 100%;
   padding: 0;
-  margin: 0 0 26px 5px;
+  margin: 0 0 30px 0;
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
@@ -130,18 +160,13 @@
 
 .photo-upload__item-control-icon {
   padding: 0;
-  margin-left: 26px;
+  margin-left: 36px;
 }
 
 .photo-upload__control-icon {
   fill: @basic-black;
   opacity: 0.3;
   margin: 5px;
-}
-
-.photo-upload__control-icon--active {
-  fill: @main-pink;
-  opacity: 1;
 }
 
 .photo-upload__list-handles {
@@ -285,6 +310,10 @@
   right: 33px;
 }
 
+.photo-upload__handle:active {
+  background: @main-pink;
+}
+
 @media (min-width: @tablet-width) {
   .photo-upload__handle-crop {
     right: 28px;
@@ -396,33 +425,53 @@
   color: #d22856;
 }
 
+.photo-upload__button-send:hover {
+  background-color: @main-pink;
+  color: @basic-white;
+}
+
+.photo-upload__button-send:focus {
+  color: @basic-white-rgb-1;
+}
+
 @media (min-width: @tablet-width) {
   .photo-upload__button-send {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-upload__button-send {
-    margin-bottom: 29px;
+    margin-bottom: 33px;
   }
 }
 
 .photo-upload__button-cancel {
   margin-bottom: 41px;
-  border: 3px solid #283645;
-  color: #283645;
-  opacity: 0.1;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+}
+
+.photo-upload__button-cancel:hover {
+  border: 3px solid rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.photo-upload__button-cancel:focus {
+  background-color: @main-black;
+  opacity: 0.3;
+  border: 3px solid rgba(40, 54, 69, 0.3);
+  color: @basic-white-rgb-1;
 }
 
 @media (min-width: @tablet-width) {
   .photo-upload__button-cancel {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-upload__button-cancel {
-    margin: 0 0 29px 44px;
+    margin: 0 0 33px 44px;
   }
 }

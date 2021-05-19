@@ -35,6 +35,15 @@
   position: relative;
 }
 
+.social__link:hover {
+  border: 3px solid @main-black-rgb-1;
+}
+
+.social__link:focus {
+  background: #ffffff;
+  opacity: 0.1;
+}
+
 .social__link--tvitter::after {
   content: "";
   display: block;
@@ -47,6 +56,10 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+.social__link--tvitter:focus::after {
+  fill: @main-pink-rgb-1;
+}
+
 .social__link--facebook::after {
   content: "";
   display: block;
@@ -57,6 +70,7 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  fill: @main-pink;
 }
 
 .social__link--youtube::after {

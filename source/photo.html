@@ -11,7 +11,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__logo-container">
-      <a class="page-header__logo" href="index.html" aria-label="Логотип Пинк">
+      <a class="page-header__logo" aria-label="Логотип Пинк" href="index.html">
         <svg class="page-header__logo-image" width="145" height="40" viewBox="0 0 147 40"
           xmlns="http://www.w3.org/2000/svg">
           <path class="page-header__logo-letter"
@@ -40,8 +40,16 @@
       </a>
     </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
+        <svg class="main-nav__toggle-svg main-nav__toggle-svg--open" width="50" height="24" viewBox="0 0 50 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#open-menu-btn"></use>
+        </svg>
+        <svg class="main-nav__toggle-svg main-nav__toggle-svg--close" width="23" height="23" viewBox="0 0 23 23"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#close_menu_btn"></use>
+        </svg>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -50,7 +58,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-content main-nav__item--active" href="#">
+            <a class="main-nav__item-content main-nav__item-content--active">
               Фотографии
             </a>
           </li>
@@ -107,7 +115,8 @@
                 назад)</span></cite>
             <span class="photo-gallery__main-photo-comment">Прыгать или нет? Напишите в комментарии свой совет и
               смотрите&nbsp;прямую трансляцию в перископе, задавайте&nbsp;свои вопросы!</span>
-            <a class="photo-gallery__main-photo_like-button" href="#" aria-label="Поставить лайк"></a>
+            <a class="photo-gallery__like-button photo-gallery__main-photo-like-button" href="#"
+              aria-label="Поставить лайк"></a>
             <span class="photo-gallery__main-photo-likes">Нравится: 215</span>
           </p>
         </div>
@@ -130,7 +139,7 @@
                 <source media="(min-width: 660px)" srcset="
                 img/galery/photo-1-desktop.jpg 1x,
                 img/galery/photo-1-desktop@2x.jpg 2x" />
-                <img class="photo-gallery__main-photo-content" src="img/galery/photo-1-mobile.jpg"
+                <img class="photo-gallery__photo-content" src="img/galery/photo-1-mobile.jpg"
                   srcset="img/galery/photo-1-mobile@2x.jpg 2x" alt="Пейзаж со штативом" />
               </picture>
             </a>
@@ -159,7 +168,7 @@
                 <source media="(min-width: 660px)" srcset="
                 img/galery/photo-2-desktop.jpg 1x,
                 img/galery/photo-2-desktop@2x.jpg 2x" />
-                <img class="photo-gallery__main-photo-content" src="img/galery/photo-2-mobile.jpg"
+                <img class="photo-gallery__photo-content" src="img/galery/photo-2-mobile.jpg"
                   srcset="img/galery/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка" />
               </picture>
             </a>
@@ -188,7 +197,7 @@
                 <source media="(min-width: 660px)" srcset="
                 img/galery/photo-3-desktop.jpg 1x,
                 img/galery/photo-3-desktop@2x.jpg 2x" />
-                <img class="photo-gallery__main-photo-content" src="img/galery/photo-3-mobile.jpg"
+                <img class="photo-gallery__photo-content" src="img/galery/photo-3-mobile.jpg"
                   srcset="img/galery/photo-3-mobile@2x.jpg 2x" alt="Облака за стеклом" />
               </picture>
             </a>
@@ -216,7 +225,7 @@
                 <source media="(min-width: 660px)" srcset="
                 img/galery/photo-4-mobile.jpg 1x,
                 img/galery/photo-4-mobile@2x.jpg 2x" />
-                <img class="photo-gallery__main-photo-content" src="img/galery/photo-4-mobile.jpg"
+                <img class="photo-gallery__photo-content" src="img/galery/photo-4-mobile.jpg"
                   srcset="img/galery/photo-4-mobile@2x.jpg 2x" alt="Бахчевой рынок" />
               </picture>
             </a>
@@ -244,7 +253,7 @@
                 <source media="(min-width: 660px)" srcset="
                 img/galery/photo-5-desktop.jpg 1x,
                 img/galery/photo-5-desktop@2x.jpg 2x" />
-                <img class="photo-gallery__main-photo-content" src="img/galery/photo-5-mobile.jpg"
+                <img class="photo-gallery__photo-content" src="img/galery/photo-5-mobile.jpg"
                   srcset="img/galery/photo-5-mobile@2x.jpg 2x" alt="Горный Пейзаж" />
               </picture>
             </a>
@@ -272,7 +281,7 @@
                 <source media="(min-width: 660px)" srcset="
                 img/galery/panorama-tablet.jpg 1x,
                 img/galery/panorama-tablet@2x.jpg 2x" />
-                <img class="photo-gallery__main-photo-content" src="img/galery/photo-6-mobile.jpg"
+                <img class="photo-gallery__photo-content" src="img/galery/photo-6-mobile.jpg"
                   srcset="img/galery/photo-6-mobile@2x.jpg 2x" alt="Закат в иллюминаторе" />
               </picture>
             </a>
@@ -307,7 +316,7 @@
             <source media="(min-width: 660px)" srcset="
             img/galery/panorama-tablet.jpg 1x,
             img/galery/panorama-tablet@2x.jpg 2x" />
-            <img class="photo-gallery__main-photo-content" src="img/galery/photo-7-mobile.jpg"
+            <img class="photo-upload__content" src="img/galery/photo-7-mobile.jpg"
               srcset="img/galery/photo-7-mobile@2x.jpg 2x" alt="Фото для загрузки" />
           </picture>
         </a>
@@ -315,25 +324,25 @@
           <ul class="photo-upload__list-control-icons">
             <li class="photo-upload__item-control-icon photo-upload__item-control-icon-crop">
               <a class="photo-upload__link" href="#" aria-label="Обрезка">
-                <svg class="photo-upload__control-icon photo-upload__control-icon--active" width="44" height="44"
-                  viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-crop"></use>
+                <svg class="photo-upload__icon photo-upload__icon-crop photo-upload__icon--active" width="44"
+                  height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#crop"></use>
                 </svg>
               </a>
             </li>
             <li class="photo-upload__item-control-icon photo-upload__item-control-icon-fill">
               <a class="photo-upload__link" href="#" aria-label="Насыщенность">
-                <svg class="photo-upload__control-icon" width="48" height="43" viewBox="0 0 48 43"
+                <svg class="photo-upload__icon photo-upload__icon-fill" width="48" height="43" viewBox="0 0 48 43"
                   xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-fill"></use>
+                  <use xlink:href="./img/sprite.svg#fill"></use>
                 </svg>
               </a>
             </li>
             <li class="photo-upload__item-control-icon photo-upload__item-control-icon-contrast">
               <a class="photo-upload__link" href="#" aria-label="Контрастность">
-                <svg class="photo-upload__control-icon" width="32" height="32" viewBox="0 0 32 32"
+                <svg class="photo-upload__icon photo-upload__icon-contrast" width="32" height="32" viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-contrast"></use>
+                  <use xlink:href="./img/sprite.svg#contrast"></use>
                 </svg>
               </a>
             </li>
@@ -341,17 +350,17 @@
           <ul class="photo-upload__list-handles">
             <li class="photo-upload__item-handle photo-upload__item-handle--active">
               <div class="photo-upload__scale photo-upload__scale-crop">
-                <a class="photo-upload__handle-crop" href="#" aria-label="Регулировка обрезки"></a>
+                <a class="photo-upload__handle photo-upload__handle-crop" href="#" aria-label="Регулировка обрезки"></a>
               </div>
-              </li">
+            </li>
             <li class="photo-upload__item-handle">
               <div class="photo-upload__scale photo-upload__scale-fill">
-                <a class="photo-upload__handle-fill" aria-label="Регулировка насыщенности"></a>
+                <a class="photo-upload__handle photo-upload__handle-fill" aria-label="Регулировка насыщенности"></a>
               </div>
             </li>
             <li class="photo-upload__item-handle">
               <div class="photo-upload__scale photo-upload__scale-contrast">
-                <a class="photo-upload__handle-contrast" aria-label="Регулировка контрастности"></a>
+                <a class="photo-upload__handle photo-upload__handle-contrast" aria-label="Регулировка контрастности"></a>
               </div>
             </li>
           </ul>
@@ -360,7 +369,6 @@
             <a class="photo-upload__button photo-upload__button-cancel" href="blank.html">Отмена</a>
           </div>
         </div>
-      </div>
       </div>
     </section>
   </main>
@@ -411,22 +419,16 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Логотип HTML академии">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML академии">
           <svg class="copyright__link-icon" width="27" height="34" viewBox="0 0 27 34"
             xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344
-            25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894
-            24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432
-            14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957
-            16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591
-            18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349
-            6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+            <use xlink:href="./img/sprite.svg#html-academy"></use>
           </svg>
         </a>
-        <div>
-        </div>
+      </div>
+    </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

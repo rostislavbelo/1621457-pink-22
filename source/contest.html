@@ -11,7 +11,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__logo-container">
-      <a class="page-header__logo" href="index.html" aria-label="Логотип Пинк">
+      <a class="page-header__logo" aria-label="Логотип Пинк" href="index.html">
         <svg class="page-header__logo-image" width="145" height="40" viewBox="0 0 147 40"
           xmlns="http://www.w3.org/2000/svg">
           <path class="page-header__logo-letter"
@@ -40,8 +40,16 @@
       </a>
     </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
+        <svg class="main-nav__toggle-svg main-nav__toggle-svg--open" width="50" height="24" viewBox="0 0 50 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#open-menu-btn"></use>
+        </svg>
+        <svg class="main-nav__toggle-svg main-nav__toggle-svg--close" width="23" height="23" viewBox="0 0 23 23"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#close_menu_btn"></use>
+        </svg>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -55,7 +63,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-content main-nav__item--active" href="#">
+            <a class="main-nav__item-content main-nav__item-content--active">
               Конкурс
             </a>
           </li>
@@ -79,7 +87,7 @@
           бонусную карту! <span class="contest__text-part-2">Пожалуйста, заполните форму ниже:</span></p>
       </div>
       <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="contest__name-block">
+        <div class="contest__name-block form-name">
           <ul class="form-name__list">
             <li class="form-name__item input-data">
               <label class="form-name__label input-data__label" for="surname-input">Фамилия:</label>
@@ -98,7 +106,7 @@
             </li>
           </ul>
         </div>
-        <div class="contest__progress-block">
+        <div class="contest__progress-block form-progress">
           <h3 class="form-progress__title contest__title">Ваши безбашенные достижения в
             путешествии
           </h3>
@@ -106,65 +114,58 @@
             <li class="form-progress__item custom-checkbox">
               <input class="custom-checkbox__input" type="checkbox" name="selfie" id="filter-selfie" checked />
               <label class="custom-checkbox__label" for="filter-selfie">
-                <em class="custom-checkbox--flap"></em>
                 Сделал селфи с акулой
               </label>
             </li>
             <li class="form-progress__item custom-checkbox">
               <input class="custom-checkbox__input" type="checkbox" name="burned" id="filter-burned" checked />
               <label class="custom-checkbox__label" for="filter-burned">
-                <em class="custom-checkbox--flap"></em>
                 Обгорел на пляже
               </label>
             </li>
             <li class="form-progress__item custom-checkbox">
               <input class="custom-checkbox__input" type="checkbox" name="see" id="filter-see" />
               <label class="custom-checkbox__label" for="filter-see">
-                <em class="custom-checkbox--flap"></em>
                 Видел Чака Норриса
               </label>
             </li>
             <li class="form-progress__item custom-checkbox">
               <input class="custom-checkbox__input" type="checkbox" name="buy" id="filter-buy" />
               <label class="custom-checkbox__label" for="filter-buy">
-                <em class="custom-checkbox--flap"></em>
                 Накупил сувениров
               </label>
             </li>
             <li class="form-progress__item custom-checkbox">
               <input class="custom-checkbox__input" type="checkbox" name="withheld" id="filter-withheld" checked />
               <label class="custom-checkbox__label" for="filter-withheld">
-                <em class="custom-checkbox--flap"></em>
                 Удержал башню
               </label>
             </li>
             <li class="form-progress__item custom-checkbox">
               <input class="custom-checkbox__input" type="checkbox" name="smash" id="filter-smash" />
               <label class="custom-checkbox__label" for="filter-smash">
-                <em class="custom-checkbox--flap"></em>
                 Разгромил отель
               </label>
             </li>
           </ul>
         </div>
-        <div class="contest__contacts-block">
+        <div class="contest__contacts-block form-contacts">
           <h3 class="form-contacts__title contest__title">Контактная информация
           </h3>
           <ul class="form-contacts__list">
-            <li class="form-contacts__item form-contacts__phone">
+            <li class="form-contacts__item form-contacts__phone input-data">
               <label class="contest__label-phone input-data__label" for="contact-name">Номер телефона</label>
               <input class="contest__input-phone input-data__input" id="contact-name" type="text" name="phone"
                 placeholder="Номер, пожалуйста" />
-
             </li>
-            <li class="form-contacts__item form-contacts__email">
+            <li class="form-contacts__item form-contacts__email input-data">
               <label class="contest__label-email input-data__label" for="contact-email">Адрес почты</label>
               <input class="contest__input-email input-data__input" id="contact-email" type="text" name="email"
                 placeholder="Введите почту *" required />
             </li>
           </ul>
         </div>
-        <div class="contest__os-block">
+        <div class="contest__os-block form-os">
           <h3 class="form-os__title contest__title">С каким приложением путешествовали?
           </h3>
           <ul class="form-os__list">
@@ -185,7 +186,7 @@
             </li>
           </ul>
         </div>
-        <div class="contest__impress-block">
+        <div class="contest__impress-block form-impress">
           <h3 class="form-impress__title contest__title">Опишите свои эмоции
           </h3>
           <textarea class="form-impress__text text-send" name="text" id="impress-text" cols="50"
@@ -201,18 +202,18 @@
           </p>
         </div>
       </form>
-      <!--         <div class="contest__popup-succes popup-succes--active">
-          <p class="popup__topic">Ваша заявка отправлена</p>
-          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
-            рассмотрим ее и оповестим&nbsp;вас.</p>
-          <a class="typical-button popup__button" href="#">Закрыть окно</a>
-        </div>
-        <div class="contest__popup-failure popup-failure--active">
-          <p class="popup__topic">Что-то пошло не так!</p>
-          <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <a class="typical-button popup__button" href="#" aria-label="Закрыть окно результата отправки формы">Ok</a>
-        </div> -->
-
+      <!-- <div class="popup contest__popup-succes contest__popup-succes--active">
+        <p class="popup__topic">Ваша заявка отправлена</p>
+        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+          время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
+        <a class="typical-button popup__button popup__button-close" href="#">Закрыть окно</a>
+      </div> -->
+<!--       <div class="popup contest__popup-failure contest__popup-failure--active">
+        <p class="popup__topic">Что-то пошло не так!</p>
+        <p class="popup__text popup__text-failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить</p>
+        <a class="typical-button popup__button" href="#" aria-label="Закрыть окно результата отправки формы">Ok</a>
+      </div> -->
     </section>
   </main>
   <footer class="page-footer">
@@ -262,22 +263,16 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Логотип HTML академии">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML академии">
           <svg class="copyright__link-icon" width="27" height="34" viewBox="0 0 27 34"
             xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344
-            25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894
-            24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432
-            14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957
-            16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591
-            18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349
-            6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+            <use xlink:href="./img/sprite.svg#html-academy"></use>
           </svg>
         </a>
-        <div>
-        </div>
+      </div>
+    </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

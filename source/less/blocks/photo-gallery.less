@@ -53,7 +53,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: -95px;
-  background: url("../../img/img_mobile/back_mobile.jpg");
+  background: @main-black url("../../img/img_mobile/back_mobile.jpg");
   background-size: 100%;
   z-index: 1;
 
@@ -64,7 +64,7 @@
 
 @media (min-width: @tablet-width) {
   .photo-gallery__title-block::before {
-    background: url("../../img/img_tablet/back_tablet.jpg");
+    background: @main-black url("../../img/img_tablet/back_tablet.jpg");
     background-size: 100%;
     height: 729px;
     top: -177px;
@@ -78,7 +78,7 @@
 
 @media (min-width: @desktop-width) {
   .photo-gallery__title-block::before {
-    background: @main-black url("../../img/back-desktop.jpg");
+    background: @main-black @main-black url("../../img/back-desktop.jpg");
     background-size: 100%;
     height: 100%;
     top: 0;
@@ -91,8 +91,6 @@
 }
 
 .photo-gallery__main-title {
-  /* width: 260px; */
-  /* padding: 28px 0 77px; */
   padding: 0 74px;
   margin: 0 auto;
   list-style-type: none;
@@ -227,6 +225,15 @@
 }
 
 .photo-gallery__main-photo-content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.photo-gallery__photo-content {
   display: block;
   width: 100%;
   height: 100%;
@@ -381,12 +388,23 @@
     bottom: 30px;
     right: 30px;
   }
+
+  .photo-gallery__main-photo-like-button {
+    bottom: 79px;
+    right: 30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .photo-gallery__like-button {
     left: 239px;
     bottom: 29px;
+  }
+
+  .photo-gallery__main-photo-like-button {
+    left: auto;
+    bottom: 54px;
+    right: 31px;
   }
 }
 

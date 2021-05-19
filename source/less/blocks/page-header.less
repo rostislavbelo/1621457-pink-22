@@ -3,17 +3,35 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: @main-black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: @main-black;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    position: inherit;
+  }
+}
+
+.page-header::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: inherit;
+  background: @black-rgb-1;
   z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    height: 110px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    margin: 0 auto 24px;
+    margin: 0 auto 0;
   }
 }
 
@@ -30,8 +48,8 @@
 .page-header__logo-container {
   width: 100%;
   min-height: 69px;
-  /* background-color: #283645; */
   box-shadow: 0 1px 0 #000000;
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {

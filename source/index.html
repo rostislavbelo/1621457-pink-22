@@ -6,12 +6,16 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon/152.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__logo-container">
-      <a class="page-header__logo" href="#" aria-label="Логотип Пинк">
+      <a class="page-header__logo" aria-label="Логотип Пинк">
         <svg class="page-header__logo-image" width="145" height="40" viewBox="0 0 147 40"
           xmlns="http://www.w3.org/2000/svg">
           <path class="page-header__logo-letter"
@@ -40,12 +44,20 @@
       </a>
     </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню">
+        <svg class="main-nav__toggle-svg main-nav__toggle-svg--open" width="50" height="24" viewBox="0 0 50 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#open-menu-btn"></use>
+        </svg>
+        <svg class="main-nav__toggle-svg main-nav__toggle-svg--close" width="23" height="23" viewBox="0 0 23 23"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#close_menu_btn"></use>
+        </svg>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__item-content main-nav__item--active" href="#">
+            <a class="main-nav__item-content main-nav__item-content--active">
               Главная
             </a>
           </li>
@@ -151,15 +163,14 @@
               <p class="reviews__text">«Приложение Pink изменило мою судьбу: в комментариях к фото год назад я нашла
                 замечательного мужика, который тоже любит прекрасное. Позже он стал моим третьим мужем. Пять
                 лет душа в душу!»</p>
-              <p class="reviews__author-name">Акулина Петрова</p>
+              <p class="reviews__author-name">Акулина Петровa</p>
               <p class="reviews__text reviews__author-about">38 лет, домохозяйка</p>
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <p class="reviews__text">«Приложение подарило мне профессию: мало-помалу я стал востребованным
-                профессиональным фотографом. Теперь у меня по пять успешных выставок в год! В основном котики
-                и енотики.»</p>
+                профессиональным фотографом. Теперь у меня по пять успешных выставок в год!»</p>
               <p class="reviews__author-name">Моисей Косоруков</p>
               <p class="reviews__text reviews__author-about">30 лет, модный фотограф</p>
             </div>
@@ -172,10 +183,9 @@
           <a class="slider-toggles__item" href="#" aria-label="Третья страница слайдера"></a>
         </p>
         <p class="reviews__flipping slider-flipping">
-          <a class="slider-flipping__item slider-flipping__item-down" href="#" aria-label="Предыдущий отзыв"></a>
-          <a class="slider-flipping__item slider-flipping__item-next" href="#" aria-label="Следующий отзыв"></a>
+          <a class="slider-flipping__item slider-flipping__item--prev" href="#" aria-label="Предыдущий отзыв"></a>
+          <a class="slider-flipping__item slider-flipping__item--next" href="#" aria-label="Следующий отзыв"></a>
         </p>
-
       </div>
     </section>
     <section class="price">
@@ -238,10 +248,10 @@
         </div>
       </div>
       <p class="price__toggles slider-toggles">
-        <a class="slider-toggles-item" href="#" aria-label="Первая страница слайдера по ценам"></a>
-        <a class="slider-toggles-item slider-toggles-item--current" href="#"
+        <a class="slider-toggles__item" href="#" aria-label="Первая страница слайдера по ценам"></a>
+        <a class="slider-toggles__item slider-toggles__item--current" href="#"
           aria-label="Вторая страница слайдера по ценам"></a>
-        <a class="slider-toggles-item" href="#" aria-label="Третья страница слайдера по ценам"></a>
+        <a class="slider-toggles__item" href="#" aria-label="Третья страница слайдера по ценам"></a>
       </p>
     </section>
     <section class="contacts">
@@ -252,7 +262,7 @@
           <li class="contacts__item contacts__item-phone">
             <p class="contacts__invitation">Звоните:</p>
             <a class="contacts__data contacts__phone" href="tel:+78125556666">
-              <span class="contacts__phone-mobile">+7 (812) 555-66-66
+              <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
             </a>
           </li>
           <li class="contacts__item contacts__item-email">
@@ -297,7 +307,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html" aria-label="Логотип Пинк">
+      <a class="page-footer__logo" aria-label="Логотип Пинк">
         <svg class="page-footer__logo-image" width="145" height="40" viewBox="0 0 147 40"
           xmlns="http://www.w3.org/2000/svg">
           <path class="page-footer__logo-letter"
@@ -342,15 +352,16 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Логотип HTML академии">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML академии">
           <svg class="copyright__link-icon" width="27" height="34" viewBox="0 0 27 34"
             xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="./img/sprite.svg#html-academy"></use>
           </svg>
         </a>
-        <div>
-        </div>
+      </div>
+    </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
