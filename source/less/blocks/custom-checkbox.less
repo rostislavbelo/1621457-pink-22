@@ -20,7 +20,7 @@
 
 .custom-checkbox__label {
   position: relative;
-  padding: 0;
+  padding: 0 0 0 59px;
   margin: 0;
   cursor: pointer;
 
@@ -33,7 +33,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     left: 0;
-    top: 0;
+    top: -6px;
     display: block;
   }
 
@@ -46,7 +46,7 @@
     border-left: 2px solid #d22856;
     border-bottom: 2px solid #d22856;
     left: 8px;
-    top: 11px;
+    top: 5px;
     display: none;
     transform: rotate(-45deg);
     z-index: 2;
@@ -55,4 +55,12 @@
 
 .custom-checkbox__input:checked + .custom-checkbox__label::after {
   display: block;
+}
+
+.custom-checkbox__label:hover::before {
+  border: 2px solid @main-black;
+}
+
+.custom-checkbox__label:active::before {
+  border: 2px solid @main-pink;
 }

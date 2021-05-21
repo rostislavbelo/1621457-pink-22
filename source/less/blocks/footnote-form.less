@@ -1,0 +1,25 @@
+.footnote-form {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @main-black;
+  text-align: center;
+}
+
+.footnote-form__particle-1 {
+  color: @main-pink;
+}
+
+.footnote-form__particle-2 {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .footnote-form__particle-2 {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

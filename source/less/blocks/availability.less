@@ -1,9 +1,14 @@
 .availability {
   padding: 0;
-  margin: 24px auto 0;
+  margin: 0 auto 0;
   width: 100%;
-  background: @main-black; /* url("../../img/img_mobile/back_mobile.jpg") no-repeat; */
+  background: @main-black;
   background-size: 100%;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    position: inherit;
+  }
 }
 
 .availability__wrapper {
@@ -37,18 +42,43 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 86px;
+  bottom: 270px;
   background: url("../../img/img_mobile/phone_top_mobile.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/img_mobile/phone_top_mobile@2x.png");
+    background-size: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .availability__wrapper::before {
     width: 660px;
     height: 545px;
-    top: 52px;
+    bottom: 0;
     background: url("../../img/img_tablet/phone_top_tablet.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img_tablet/phone_top_tablet@2x.png");
+      background-size: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__wrapper::before {
+    width: 1050px;
+    height: 645px;
+    top: 40px;
+    transform: translateX(-43%);
+    background: url("../../img/phone_desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/phone_desktop@2x.png");
+      background-size: 100%;
+    }
   }
 }
 
@@ -60,20 +90,47 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 119px;
+  bottom: 327px;
   background: url("../../img/img_mobile/screen_top_mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/img_mobile/screen_top_mobile@2x.jpg");
+    background-size: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .availability__wrapper::after {
     width: 195px;
     height: 346px;
-    top: 106px;
+    bottom: 145px;
     left: 50%;
     transform: translateX(21%);
     background: url("../../img/img_tablet/screen_top_tablet.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img_tablet/screen_top_tablet@2x.jpg");
+      background-size: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__wrapper::after {
+    width: 230px;
+    height: 408px;
+    top: 105px;
+    left: 50%;
+    transform: translateX(52%);
+    background: url("../../img/screen_desktop.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/screen_desktop@2x.jpg");
+      background-size: 100%;
+    }
   }
 }
 
@@ -81,32 +138,65 @@
   content: "";
   display: block;
   width: 100%;
-  height: 100%;
+  height: 462px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 259px;
-  background: url("../../img/img_mobile/back_mobile.jpg") no-repeat;
+  top: -65px;
+  background: @main-black url("../../img/img_mobile/back_mobile.jpg") no-repeat;
   background-size: 100%;
-}
 
-@media (min-width: @tablet-width) {
-  .availability::before {
-    background: url("../../img/img_tablet/back_tablet.jpg") no-repeat;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/img_mobile/back_mobile@2x.jpg");
     background-size: 100%;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .availability::before {
+    width: 100%;
+    height: 729px;
+    background: @main-black url("../../img/img_tablet/back_tablet.jpg");
+    background-size: 100%;
+    top: -106px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/img_tablet/back-tablet@2x.jpg");
+      background-size: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability::before {
+    width: 100%;
+    height: 853px;
+    background: @main-black url("../../img/back-desktop.jpg") no-repeat;
+    background-size: 100%;
+    top: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/back-desktop@2x.jpg");
+      background-size: 100%;
+    }
+  }
+}
+
 .availability__main-title {
-  padding: 0;
-  margin-bottom: 314px;
-  max-width: 300px;
+  margin: 24px 0 314px;
+  padding: 0 45px;
 }
 
 @media (min-width: @tablet-width) {
   .availability__main-title {
-    margin: 71px 367px 1px 47px;
+    margin: 95px 371px 1px 47px;
     max-width: 245px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__main-title {
+    margin: 40px 639px 9px 0;
   }
 }
 
@@ -126,6 +216,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .availability__slogan {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
 .availability__downloads {
   padding: 0;
   margin: 0;
@@ -142,7 +239,13 @@
   .availability__downloads {
     background-color: rgba(255, 255, 255, 0);
     width: auto;
-    margin-right: 321px;
+    margin: 0 320px 108px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__downloads {
+    margin: 0 640px 0 0;
   }
 }
 
@@ -163,10 +266,27 @@
   color: @basic-white;
 }
 
+.availability__main-link:hover {
+  background-color: @basic-white;
+  color: @main-pink;
+}
+
+.availability__main-link:focus {
+  color: @main-pink-rgb-1;
+}
+
 @media (min-width: @tablet-width) {
   .availability__main-link {
     width: 300px;
     margin-bottom: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__main-link {
+    font-size: 21px;
+    height: 56px;
+    margin-bottom: 126px;
   }
 }
 
@@ -232,9 +352,23 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .availability__appstore-link::before {
+    top: -58px;
+  }
+
+  .availability__playmarket-link::before {
+    top: -51px;
+  }
+
+  .availability__windows-link::before {
+    top: -47px;
+  }
+}
+
 .availability__text {
   padding: 0;
-  margin: 0 0 32px;
+  margin: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -246,6 +380,12 @@
   .availability__text {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 114px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__text {
+    margin-bottom: 124px;
   }
 }
