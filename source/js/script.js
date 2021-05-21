@@ -53,16 +53,18 @@ if (slider_bullits_r) {
   });
 }
 
-window.addEventListener("resize", function () {
-  if (document.documentElement.clientWidth < 1200) {
-    let k = Array.from(reviews).indexOf(
-      document.querySelector(".reviews__item--active")
-    );
-    reviews_list.style.marginLeft =
-      -1 * k * (document.documentElement.clientWidth - 17) + 19 + "px";
-  } else {
-  }
-});
+if (reviews_list) {
+  window.addEventListener("resize", function () {
+    if (document.documentElement.clientWidth < 1200) {
+      let k = Array.from(reviews).indexOf(
+        document.querySelector(".reviews__item--active")
+      );
+      reviews_list.style.marginLeft =
+        -1 * k * (document.documentElement.clientWidth - 17) + 19 + "px";
+    } else {
+    }
+  });
+}
 
 if (slider_prev) {
   slider_prev.addEventListener("click", function (evt) {
