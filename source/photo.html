@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.min.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon/152.png" />
 </head>
 
 <body class="page-body">
@@ -323,7 +326,7 @@
         <div class="photo-upload__control">
           <ul class="photo-upload__list-control-icons">
             <li class="photo-upload__item-control-icon photo-upload__item-control-icon-crop">
-              <a class="photo-upload__link" href="#" aria-label="Обрезка">
+              <a class="photo-upload__link crop" href="#" aria-label="Обрезка">
                 <svg class="photo-upload__icon photo-upload__icon-crop photo-upload__icon--active" width="44"
                   height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#crop"></use>
@@ -331,7 +334,7 @@
               </a>
             </li>
             <li class="photo-upload__item-control-icon photo-upload__item-control-icon-fill">
-              <a class="photo-upload__link" href="#" aria-label="Насыщенность">
+              <a class="photo-upload__link fill" href="#" aria-label="Насыщенность">
                 <svg class="photo-upload__icon photo-upload__icon-fill" width="48" height="43" viewBox="0 0 48 43"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#fill"></use>
@@ -339,7 +342,7 @@
               </a>
             </li>
             <li class="photo-upload__item-control-icon photo-upload__item-control-icon-contrast">
-              <a class="photo-upload__link" href="#" aria-label="Контрастность">
+              <a class="photo-upload__link contrast" href="#" aria-label="Контрастность">
                 <svg class="photo-upload__icon photo-upload__icon-contrast" width="32" height="32" viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite.svg#contrast"></use>
@@ -348,26 +351,39 @@
             </li>
           </ul>
           <ul class="photo-upload__list-handles">
-            <li class="photo-upload__item-handle photo-upload__item-handle--active">
+            <li class="photo-upload__item-handle handle-crop photo-upload__item-handle--active">
               <div class="photo-upload__scale photo-upload__scale-crop">
                 <a class="photo-upload__handle photo-upload__handle-crop" href="#" aria-label="Регулировка обрезки"></a>
               </div>
             </li>
-            <li class="photo-upload__item-handle">
+            <li class="photo-upload__item-handle handle-fill">
               <div class="photo-upload__scale photo-upload__scale-fill">
                 <a class="photo-upload__handle photo-upload__handle-fill" aria-label="Регулировка насыщенности"></a>
               </div>
             </li>
-            <li class="photo-upload__item-handle">
+            <li class="photo-upload__item-handle handle-contrast">
               <div class="photo-upload__scale photo-upload__scale-contrast">
-                <a class="photo-upload__handle photo-upload__handle-contrast" aria-label="Регулировка контрастности"></a>
+                <a class="photo-upload__handle photo-upload__handle-contrast"
+                  aria-label="Регулировка контрастности"></a>
               </div>
             </li>
           </ul>
-          <div class="photo-upload__buttons">
-            <a class="photo-upload__button photo-upload__button-send" href="blank.html">Запостить</a>
-            <a class="photo-upload__button photo-upload__button-cancel" href="blank.html">Отмена</a>
-          </div>
+          <form class="photo-upload__send" action="https://echo.htmlacademy.ru" method="POST">
+            <ul class="photo-upload__list-input visually-hidden">
+              <li class="photo-upload__item-input">
+                <input class="photo-upload__input-crop" type="number" value="80" id="input-crop" name="crop">
+              </li>
+              <li class="photo-upload__item-input">
+                <input class="photo-upload__input-fill" type="number" value="20" id="input-fill" name="fill">
+              </li>
+              <li class="photo-upload__item-input">
+                <input class="photo-upload__input-contrast" type="number" value="50" id="input-contrast"
+                  name="contrast">
+              </li>
+            </ul>
+            <input class="photo-upload__button photo-upload__button-send" type="submit" value="Запостить">
+            <input class="photo-upload__button photo-upload__button-cancel" type="reset" value="Отмена">
+          </form>
         </div>
       </div>
     </section>

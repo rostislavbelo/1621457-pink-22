@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.min.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon/152.png" />
 </head>
 
 <body class="page-body">
@@ -82,138 +85,127 @@
         <h1 class="visually-hidden">Прими участие в конкурсе Pink</h1>
         <h2 class="contest__main-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
-      <div class="contest__text-section">
+      <div class="contest__form-block">
         <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
           бонусную карту! <span class="contest__text-part-2">Пожалуйста, заполните форму ниже:</span></p>
+        <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="contest__name-block form-name">
+            <ul class="form-name__list">
+              <li class="form-name__item input-data">
+                <label class="form-name__label input-data__label" for="surname-input">Фамилия:</label>
+                <input class="form-name__input input-data__input surname" id="surname-input" type="text"
+                  name="surname-input" placeholder="Укажите фамилию *" required />
+              </li>
+              <li class="form-name__item input-data">
+                <label class="form-name__label input-data__label" for="name-input">Имя:</label>
+                <input class="form-name__input input-data__input name" id="name-input" type="text" name="name-input"
+                  placeholder="Введите ваше имя *" required />
+              </li>
+              <li class="form-name__item input-data">
+                <label class="form-name__label input-data__label" for="patronymic-input">Отчество:</label>
+                <input class="form-name__input input-data__input" id="patronymic-input" type="text"
+                  name="patronymic-input" placeholder="Ну и отчество тоже" />
+              </li>
+            </ul>
+          </div>
+          <div class="contest__progress-block form-progress">
+            <h3 class="form-progress__title contest__title">Ваши безбашенные достижения в
+              путешествии
+            </h3>
+            <ul class="form-progress__list">
+              <li class="form-progress__item custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="selfie" id="filter-selfie" checked />
+                <label class="custom-checkbox__label" for="filter-selfie">
+                  Сделал селфи с акулой
+                </label>
+              </li>
+              <li class="form-progress__item custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="burned" id="filter-burned" checked />
+                <label class="custom-checkbox__label" for="filter-burned">
+                  Обгорел на пляже
+                </label>
+              </li>
+              <li class="form-progress__item custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="see" id="filter-see" />
+                <label class="custom-checkbox__label" for="filter-see">
+                  Видел Чака Норриса
+                </label>
+              </li>
+              <li class="form-progress__item custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="buy" id="filter-buy" />
+                <label class="custom-checkbox__label" for="filter-buy">
+                  Накупил сувениров
+                </label>
+              </li>
+              <li class="form-progress__item custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="withheld" id="filter-withheld" checked />
+                <label class="custom-checkbox__label" for="filter-withheld">
+                  Удержал башню
+                </label>
+              </li>
+              <li class="form-progress__item custom-checkbox">
+                <input class="custom-checkbox__input" type="checkbox" name="smash" id="filter-smash" />
+                <label class="custom-checkbox__label" for="filter-smash">
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="contest__contacts-block form-contacts">
+            <h3 class="form-contacts__title contest__title">Контактная информация
+            </h3>
+            <ul class="form-contacts__list">
+              <li class="form-contacts__item form-contacts__phone input-data">
+                <label class="contest__label-phone input-data__label" for="contact-name">Номер телефона</label>
+                <input class="contest__input-phone input-data__input" id="contact-name" type="text" name="phone"
+                  placeholder="Номер, пожалуйста" />
+              </li>
+              <li class="form-contacts__item form-contacts__email input-data">
+                <label class="contest__label-email input-data__label" for="contact-email">Адрес почты</label>
+                <input class="contest__input-email input-data__input mail" id="contact-email" type="text" name="email"
+                  placeholder="Введите почту *" required />
+              </li>
+            </ul>
+          </div>
+          <div class="contest__os-block form-os">
+            <h3 class="form-os__title contest__title">С каким приложением путешествовали?
+            </h3>
+            <ul class="form-os__list">
+              <li class="form-os__item radio">
+                <input class="radio__input visually-hidden" type="radio" name="choice-os" value="ios" id="filter-ios"
+                  checked />
+                <label class="radio__label form-os__radio-label" for="filter-ios">Pink для iOS</label>
+              </li>
+              <li class="form-os__item radio">
+                <input class="radio__input visually-hidden" type="radio" name="choice-os" value="android"
+                  id="filter-android" />
+                <label class="radio__label form-os__radio-label" for="filter-android">Pink на Android</label>
+              </li>
+              <li class="form-os__item radio">
+                <input class="radio__input visually-hidden" type="radio" name="choice-os" value="Windows"
+                  id="filter-windows" />
+                <label class="radio__label form-os__radio-label" for="filter-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+          <div class="contest__impress-block form-impress">
+            <h3 class="form-impress__title contest__title">Опишите свои эмоции
+            </h3>
+            <textarea class="form-impress__text text-send" name="text" id="impress-text" cols="50"
+              rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+          <div class="contest__send-forms">
+            <button class="typical-button contest__send-button" type="submit">Отправить форму</button>
+          </div>
+          <div class="contest__form-legend">
+            <p class="footnote-form">
+              <span class="footnote-form__particle-1">*</span> — обязательные <span
+                class="footnote-form__particle-2">для
+                заполнения </span>поля
+            </p>
+          </div>
+        </form>
       </div>
-      <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="contest__name-block form-name">
-          <ul class="form-name__list">
-            <li class="form-name__item input-data">
-              <label class="form-name__label input-data__label" for="surname-input">Фамилия:</label>
-              <input class="form-name__input input-data__input" id="surname-input" type="text" name="surname-input"
-                placeholder="Укажите фамилию *" required />
-            </li>
-            <li class="form-name__item input-data">
-              <label class="form-name__label input-data__label" for="name-input">Имя:</label>
-              <input class="form-name__input input-data__input" id="name-input" type="text" name="name-input"
-                placeholder="Введите ваше имя *" required />
-            </li>
-            <li class="form-name__item input-data">
-              <label class="form-name__label input-data__label" for="patronymic-input">Отчество:</label>
-              <input class="form-name__input input-data__input" id="patronymic-input" type="text"
-                name="patronymic-input" placeholder="Ну и отчество тоже" />
-            </li>
-          </ul>
-        </div>
-        <div class="contest__progress-block form-progress">
-          <h3 class="form-progress__title contest__title">Ваши безбашенные достижения в
-            путешествии
-          </h3>
-          <ul class="form-progress__list">
-            <li class="form-progress__item custom-checkbox">
-              <input class="custom-checkbox__input" type="checkbox" name="selfie" id="filter-selfie" checked />
-              <label class="custom-checkbox__label" for="filter-selfie">
-                Сделал селфи с акулой
-              </label>
-            </li>
-            <li class="form-progress__item custom-checkbox">
-              <input class="custom-checkbox__input" type="checkbox" name="burned" id="filter-burned" checked />
-              <label class="custom-checkbox__label" for="filter-burned">
-                Обгорел на пляже
-              </label>
-            </li>
-            <li class="form-progress__item custom-checkbox">
-              <input class="custom-checkbox__input" type="checkbox" name="see" id="filter-see" />
-              <label class="custom-checkbox__label" for="filter-see">
-                Видел Чака Норриса
-              </label>
-            </li>
-            <li class="form-progress__item custom-checkbox">
-              <input class="custom-checkbox__input" type="checkbox" name="buy" id="filter-buy" />
-              <label class="custom-checkbox__label" for="filter-buy">
-                Накупил сувениров
-              </label>
-            </li>
-            <li class="form-progress__item custom-checkbox">
-              <input class="custom-checkbox__input" type="checkbox" name="withheld" id="filter-withheld" checked />
-              <label class="custom-checkbox__label" for="filter-withheld">
-                Удержал башню
-              </label>
-            </li>
-            <li class="form-progress__item custom-checkbox">
-              <input class="custom-checkbox__input" type="checkbox" name="smash" id="filter-smash" />
-              <label class="custom-checkbox__label" for="filter-smash">
-                Разгромил отель
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="contest__contacts-block form-contacts">
-          <h3 class="form-contacts__title contest__title">Контактная информация
-          </h3>
-          <ul class="form-contacts__list">
-            <li class="form-contacts__item form-contacts__phone input-data">
-              <label class="contest__label-phone input-data__label" for="contact-name">Номер телефона</label>
-              <input class="contest__input-phone input-data__input" id="contact-name" type="text" name="phone"
-                placeholder="Номер, пожалуйста" />
-            </li>
-            <li class="form-contacts__item form-contacts__email input-data">
-              <label class="contest__label-email input-data__label" for="contact-email">Адрес почты</label>
-              <input class="contest__input-email input-data__input" id="contact-email" type="text" name="email"
-                placeholder="Введите почту *" required />
-            </li>
-          </ul>
-        </div>
-        <div class="contest__os-block form-os">
-          <h3 class="form-os__title contest__title">С каким приложением путешествовали?
-          </h3>
-          <ul class="form-os__list">
-            <li class="form-os__item radio">
-              <input class="radio__input visually-hidden" type="radio" name="choice-os" value="ios" id="filter-ios"
-                checked />
-              <label class="radio__label form-os__radio-label" for="filter-ios">Pink для iOS</label>
-            </li>
-            <li class="form-os__item radio">
-              <input class="radio__input visually-hidden" type="radio" name="choice-os" value="android"
-                id="filter-android" />
-              <label class="radio__label form-os__radio-label" for="filter-android">Pink на Android</label>
-            </li>
-            <li class="form-os__item radio">
-              <input class="radio__input visually-hidden" type="radio" name="choice-os" value="Windows"
-                id="filter-windows" />
-              <label class="radio__label form-os__radio-label" for="filter-windows">Windows Phone</label>
-            </li>
-          </ul>
-        </div>
-        <div class="contest__impress-block form-impress">
-          <h3 class="form-impress__title contest__title">Опишите свои эмоции
-          </h3>
-          <textarea class="form-impress__text text-send" name="text" id="impress-text" cols="50"
-            rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </div>
-        <div class="contest__send-forms">
-          <button class="typical-button contest__send-button" type="submit">Отправить форму</button>
-        </div>
-        <div class="contest__form-legend">
-          <p class="footnote-form">
-            <span class="footnote-form__particle-1">*</span> — обязательные <span class="footnote-form__particle-2">для
-              заполнения </span>поля
-          </p>
-        </div>
-      </form>
-      <!-- <div class="popup contest__popup-succes contest__popup-succes--active">
-        <p class="popup__topic">Ваша заявка отправлена</p>
-        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
-          время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
-        <a class="typical-button popup__button popup__button-close" href="#">Закрыть окно</a>
-      </div> -->
-<!--       <div class="popup contest__popup-failure contest__popup-failure--active">
-        <p class="popup__topic">Что-то пошло не так!</p>
-        <p class="popup__text popup__text-failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
-          заполнить</p>
-        <a class="typical-button popup__button" href="#" aria-label="Закрыть окно результата отправки формы">Ok</a>
-      </div> -->
     </section>
   </main>
   <footer class="page-footer">
@@ -272,6 +264,21 @@
       </div>
     </div>
   </footer>
+  <div class="popup">
+    <div class="popup popup__succes success">
+      <p class="popup__topic">Ваша заявка отправлена</p>
+      <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+        время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      <a class="typical-button popup__button popup__button-close popup-close" href="#">Закрыть окно</a>
+    </div>
+    <div class="popup popup__failed failed">
+      <p class="popup__topic">Что-то пошло не так!</p>
+      <p class="popup__text popup__text-failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+      <a class="typical-button popup__button popup-close" href="#"
+        aria-label="Закрыть окно результата отправки формы">Ok</a>
+    </div>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 

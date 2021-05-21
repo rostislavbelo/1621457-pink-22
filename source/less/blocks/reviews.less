@@ -13,7 +13,7 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    margin: 0 auto 190px;
+    margin: 0 auto 165px;
   }
 }
 
@@ -71,6 +71,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 230px;
+  }
 }
 
 .reviews__text {

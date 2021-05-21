@@ -138,12 +138,12 @@
   content: "";
   display: block;
   width: 100%;
-  height: 100%;
+  height: 462px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -65px;
-  background: @main-black url ("../../img/img_mobile/back_mobile.jpg") no-repeat;
+  background: @main-black url("../../img/img_mobile/back_mobile.jpg") no-repeat;
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
@@ -154,10 +154,10 @@
 
 @media (min-width: @tablet-width) {
   .availability::before {
-    background: @main-blackurl ("../../img/img_tablet/back_tablet.jpg")
-      no-repeat;
-    background-size: 100%;
+    width: 100%;
     height: 729px;
+    background: @main-black url("../../img/img_tablet/back_tablet.jpg");
+    background-size: 100%;
     top: -106px;
 
     @media (min-resolution: 2dppx) {
@@ -169,6 +169,8 @@
 
 @media (min-width: @desktop-width) {
   .availability::before {
+    width: 100%;
+    height: 853px;
     background: @main-black url("../../img/back-desktop.jpg") no-repeat;
     background-size: 100%;
     top: 0;
