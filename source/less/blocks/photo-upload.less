@@ -176,7 +176,7 @@
 
 .photo-upload__list-handles {
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -224,6 +224,7 @@
   .photo-upload__item-handle {
     display: block;
     padding-bottom: 72px;
+    position: relative;
   }
 
   .photo-upload__item-handle::before {
@@ -333,6 +334,10 @@
   }
 }
 
+.photo-upload__handle:active {
+  background: @main-pink;
+}
+
 .photo-upload__handle-crop {
   position: absolute;
   width: 14px;
@@ -344,10 +349,6 @@
   display: block;
   top: -5px;
   right: 33px;
-}
-
-.photo-upload__handle:active {
-  background: @main-pink;
 }
 
 @media (min-width: @tablet-width) {

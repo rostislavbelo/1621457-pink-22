@@ -178,18 +178,48 @@
 
 .contacts__map-img {
   width: 100%;
-  height: auto;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
+}
+
+.contacts__online-map {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
 
 .contacts__google-map {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 8px;
+  height: 200px;
   left: 0;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
 
 .contacts__email:hover {

@@ -6,6 +6,12 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet" />
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
+  <link rel="preload" href="/fonts/opensans.woff" as="font">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="/fonts/opensanslight.woff" as="font">
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="favicon/152.png" />
@@ -114,8 +120,8 @@
             <span class="photo-gallery__lable-panorama">Панорама дня</span>
           </a>
           <p class="photo-gallery__main-photo-inf">
-            <cite class="photo-gallery__author-name">Анна <span class="photo-gallery__time-ago">(5 минут
-                назад)</span></cite>
+            <cite class="photo-gallery__author-name">Анна <span
+                class="photo-gallery__time-ago">(5&nbsp;минут&nbsp;назад)</span></cite>
             <span class="photo-gallery__main-photo-comment">Прыгать или нет? Напишите в комментарии свой совет и
               смотрите&nbsp;прямую трансляцию в перископе, задавайте&nbsp;свои вопросы!</span>
             <a class="photo-gallery__like-button photo-gallery__main-photo-like-button" href="#"
@@ -147,7 +153,7 @@
               </picture>
             </a>
             <cite class="photo-gallery__author-name">
-              Левон <span class="photo-gallery__time-ago">(5 часов назад)</span>
+              Левон <span class="photo-gallery__time-ago">(5&nbsp;часов&nbsp;назад)</span>
             </cite>
             <p class="photo-gallery__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
@@ -176,7 +182,7 @@
               </picture>
             </a>
             <cite class="photo-gallery__author-name">
-              Антон <span class="photo-gallery__time-ago">(12 часов назад)</span>
+              Антон <span class="photo-gallery__time-ago">(12&nbsp;часов&nbsp;назад)</span>
             </cite>
             <p class="photo-gallery__comment">Соседи будут рады!</p>
             <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
@@ -205,7 +211,7 @@
               </picture>
             </a>
             <cite class="photo-gallery__author-name">
-              Борис <span class="photo-gallery__time-ago">(20 часов назад)</span></cite>
+              Борис <span class="photo-gallery__time-ago">(20&nbsp;часов&nbsp;назад)</span></cite>
             <p class="photo-gallery__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
             <span class="photo-gallery__likes">Нравится: 215</span>
@@ -233,7 +239,7 @@
               </picture>
             </a>
             <cite class="photo-gallery__author-name">
-              Сергей <span class="photo-gallery__time-ago">(25 часов назад)</span></cite>
+              Сергей <span class="photo-gallery__time-ago">(25&nbsp;часов&nbsp;назад)</span></cite>
             <p class="photo-gallery__comment">Самая кубанская в мире!</p>
             <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
             <span class="photo-gallery__likes">Нравится: 4</span>
@@ -261,7 +267,7 @@
               </picture>
             </a>
             <cite class="photo-gallery__author-name">
-              Максим <span class="photo-gallery__time-ago">(40 часов назад)</span></cite>
+              Максим <span class="photo-gallery__time-ago">(40&nbsp;часов&nbsp;назад)</span></cite>
             <p class="photo-gallery__comment">Где снег-то?</p>
             <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
             <span class="photo-gallery__likes">Нравится: 150</span>
@@ -289,7 +295,7 @@
               </picture>
             </a>
             <cite class="photo-gallery__author-name">
-              Надежда <span class="photo-gallery__time-ago">(45 часов назад)</span></cite>
+              Надежда <span class="photo-gallery__time-ago">(45&nbsp;часов&nbsp;назад)</span></cite>
             <p class="photo-gallery__comment">Всем GM и взаимные лайки!</p>
             <a class="photo-gallery__like-button" href="#" aria-label="Поставить лайк"></a>
             <span class="photo-gallery__likes">Нравится: 2560</span>
@@ -358,29 +364,21 @@
             </li>
             <li class="photo-upload__item-handle handle-fill">
               <div class="photo-upload__scale photo-upload__scale-fill">
-                <a class="photo-upload__handle photo-upload__handle-fill" aria-label="Регулировка насыщенности"></a>
+                <a class="photo-upload__handle photo-upload__handle-fill" href="#"
+                  aria-label="Регулировка насыщенности"></a>
               </div>
             </li>
             <li class="photo-upload__item-handle handle-contrast">
               <div class="photo-upload__scale photo-upload__scale-contrast">
-                <a class="photo-upload__handle photo-upload__handle-contrast"
+                <a class="photo-upload__handle photo-upload__handle-contrast" href="#"
                   aria-label="Регулировка контрастности"></a>
               </div>
             </li>
           </ul>
           <form class="photo-upload__send" action="https://echo.htmlacademy.ru" method="POST">
-            <ul class="photo-upload__list-input visually-hidden">
-              <li class="photo-upload__item-input">
-                <input class="photo-upload__input-crop" type="number" value="80" id="input-crop" name="crop">
-              </li>
-              <li class="photo-upload__item-input">
-                <input class="photo-upload__input-fill" type="number" value="20" id="input-fill" name="fill">
-              </li>
-              <li class="photo-upload__item-input">
-                <input class="photo-upload__input-contrast" type="number" value="50" id="input-contrast"
-                  name="contrast">
-              </li>
-            </ul>
+            <input class="photo-upload__input-crop" type="hidden" value="80" id="input-crop" name="crop">
+            <input class="photo-upload__input-fill" type="hidden" value="20" id="input-fill" name="fill">
+            <input class="photo-upload__input-contrast" type="hidden" value="50" id="input-contrast" name="contrast">
             <input class="photo-upload__button photo-upload__button-send" type="submit" value="Запостить">
             <input class="photo-upload__button photo-upload__button-cancel" type="reset" value="Отмена">
           </form>

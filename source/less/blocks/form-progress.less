@@ -37,13 +37,13 @@
 
 @media (min-width: @desktop-width) {
   .form-progress__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 164px;
+    display: grid;
+    grid-template-columns: 37% 34% 1fr;
+    grid-auto-rows: auto;
+    padding: 58px 0 0 38px;
   }
 
-  .form-progress__item {
-    margin-right: 55px;
+  .form-progress__item:nth-child(2n) {
+    order: 1;
   }
 }
